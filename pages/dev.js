@@ -2,6 +2,7 @@ import React from 'react'
 import Router from 'next/router'
 import Head from 'next/head'
 
+
 export default class extends React.Component {
   static getInitialProps () {
     return {
@@ -23,7 +24,6 @@ export default class extends React.Component {
         </Head>
         <div>
         </div>
-        
       </div>
     )
   }
