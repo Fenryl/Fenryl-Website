@@ -36,12 +36,12 @@ export default class extends React.Component {
   }
 
   dismissModal () {
-    Router.push('/')
+    Router.push('/2d')
   }
 
   showPhoto (e, id) {
     e.preventDefault()
-    Router.push(`/?photoId=${id}`, `/photo?id=${id}`)
+    Router.push(`/2d/?photoId=${id}`, `2d/photo?id=${id}`)
   }
 
   render () {
@@ -67,7 +67,7 @@ export default class extends React.Component {
                 <div key={id} className='photo'>
                   <a
                     className='photoLink'
-                    href={`/photo?id=${id}`}
+                    href={`/2d/photo?id=${id}`}
                     onClick={(e) => this.showPhoto(e, id)}
                   >
                     {id}
@@ -89,7 +89,7 @@ export default class extends React.Component {
 
               .photoLink {
                 color: #333;
-                verticalAlign: middle;
+                vertical-align: middle;
                 cursor: pointer;
                 background: #eee;
                 display: inline-block;
@@ -101,7 +101,7 @@ export default class extends React.Component {
               }
 
               .photoLink:hover {
-                borderColor: blue;
+                border-color: blue;
               }
             `}</style>
       </div>

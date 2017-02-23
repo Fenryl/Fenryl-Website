@@ -21,12 +21,8 @@ export default class Header extends React.Component {
           <style jsx>{`
             .header {
                 display: flex;
+                align-items: baseline;
             }
-
-            .menu ul {
-                
-            }
-
 
             .menu li {
                 display: inline-block;
