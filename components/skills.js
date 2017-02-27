@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { RadioGroup, Radio } from 'react-radio-group'
-
 import SkillDetail from './skill-detail'
 
 
@@ -13,14 +11,89 @@ export default class Skills extends React.Component {
         this.state = {
             skills: [
                 {
-                    name: "javascript",
-                    description: "super langage !",
-                    icon: "javascript"
+                    name: "JavaScript",
+                    description:
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>,
+                    icon:
+                        <div>
+                            <i className="devicon-javascript-plain"></i>
+                            <style jsx>{`i {font-size: 6em;}`}</style>
+                        </div>
+                },
+                {
+                    name: "HTML/CSS",
+                    description:
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>,
+                    icon:
+                        <div>
+                            <i className="devicon-html5-plain-wordmark"></i>
+                            <i className="devicon-css3-plain-wordmark"></i>
+                            <style jsx>{`i {font-size: 5em;}`}</style>
+                        </div>
                 },
                 {
                     name: "PHP",
-                    description: "bof...",
-                    icon: "php"
+                    description:
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>,
+                    icon:
+                        <div>
+                            <i className="devicon-php-plain"></i>
+                            <style jsx>{`i {font-size: 9em;}`}</style>
+                        </div>
+                },
+                {
+                    name: "MySQL",
+                    description:
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>,
+                    icon:
+                        <div>
+                            <i className="devicon-mysql-plain-wordmark"></i>
+                            <style jsx>{`i {font-size: 9em;}`}</style>
+                        </div>
+                },
+                {
+                    name: "Design graphique",
+                    description:
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>,
+                    icon:
+                        <div>
+                            <i className="fa fa-pencil"></i>
+                            <style jsx>{`i {font-size: 5em;}`}</style>
+                        </div>
+                },
+                {
+                    name: "Animation 2D/3D",
+                    description:
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>,
+                    icon:
+                        <div>
+                            <i className="material-icons">live_tv</i>
+                            <style jsx>{`i {font-size: 7em;}`}</style>
+                        </div>
                 }
             ],
             currentTitle: "",
@@ -44,32 +117,44 @@ export default class Skills extends React.Component {
             currentIcon: this.state.skills[0].icon
         });
     }
-    
+
 
     render() {
         let skillList = this.state.skills;
-        
+
 
         return (
             <div className="skills">
-                <div className="container">
-                    <SkillDetail
-                        title={this.state.currentTitle}
-                        description={this.state.currentDescription}
-                        icon={this.state.currentIcon}
-                    />
-                </div>
-                <div className="skillMenu" onChange={this.setSkill}>
+                <SkillDetail
+                    title={this.state.currentTitle}
+                    description={this.state.currentDescription}
+                    icon={this.state.currentIcon}
+                />
+                <div className="skillMenu col12" onChange={this.setSkill}>
                     {skillList.map((data, i) => (
-                        <label key={`label_${i}`}>
-                            <input defaultChecked={i === 0 ? true : false} type="radio" name="skill" value={i} key={`label_${i}`} />{data.name}
+                        <label className="menuItem" key={`label_${i}`}>
+                            <input defaultChecked={i === 0} type="radio" name="skill" value={i}
+                                   key={`label_${i}`}/>{data.name}
                         </label>
                     ))
                     }
                 </div>
 
                 <style jsx>{`
-                    
+                    .skills {
+                        padding: 20px 0;
+                        background-color: #fafafa;
+                    }
+
+                    .skillMenu {
+                        display: flex;
+                        margin: auto;
+                    }
+
+                    .menuItem {
+                        flex: 1;
+                        padding: 10px 0;
+                    }
                 `}</style>
             </div>
         )

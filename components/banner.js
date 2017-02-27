@@ -6,10 +6,12 @@ export default class Banner extends React.Component {
     render() {
         return (
             <div className="banner">
-                <div className="container">
-                        <img className="avatar" src="/static/assets/ID_Background.png" rel="avatar" />
-                    <div className="about">
-                        <h2 className="about">Bastien Cailhol</h2>
+                <div className="container col12">
+                    <div className="avatar col2">
+                        <img src="/static/assets/ID_Background.png" rel="avatar"/>
+                    </div>
+                    <div className="about col10">
+                        <h2>Bastien Cailhol</h2>
                         <h3>Développeur Web & Designer</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -21,30 +23,30 @@ export default class Banner extends React.Component {
 
                 <style jsx>{`
                     .banner {
+                        padding: 20px 0;
                         background-color: #fafafa;
                     }
 
                     .container {
                         display: flex;
-                        width: 960px;
                         margin: auto;
                         text-align: center;
                         align-items: center
                     }
 
                     .avatar {
-                        margin: 20px 25px;
+                        text-align: center;
+                    }
+
+
+                    img {
                         width: 150px;
                         image-rendering: pixelated;
                     }
 
                     .about {
-                        flex: 1;
-                        margin: 0 40px;
-                    }
-
-                    .pdfDownload {
-                        margin-top: 20px
+                        padding-left: 20px;
+                        padding-right: 40px;
                     }
                 `}</style>
             </div>

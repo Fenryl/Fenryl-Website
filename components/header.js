@@ -22,11 +22,13 @@ export default class Header extends React.Component {
             .header {
                 display: flex;
                 align-items: baseline;
+                justify-content: space-between;
             }
 
             .menu li {
                 display: inline-block;
                 margin: 0 10px;
+                text-transform: uppercase;
             }
         `}</style>
       </div>

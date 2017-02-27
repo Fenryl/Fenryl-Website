@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default class ListLine extends React.Component {
+export default class CareerLine extends React.Component {
 
 
     render() {
         const {title, place, details, date, city} = this.props;
         return (
-            <div className="listLine">
-                <div className="description">
+            <div className="careerLine">
+                <div className="description col8">
                     <h5 className="title">
                         {title}
                     </h5>
@@ -16,7 +16,7 @@ export default class ListLine extends React.Component {
                     </p>
                     {details}
                 </div>
-                <div className="info">
+                <div className="info col2">
                     <p className="date">
                         {date}
                     </p>
@@ -25,18 +25,13 @@ export default class ListLine extends React.Component {
                     </p>
                 </div>
                 <style jsx>{`
-                    .listLine {
+                    .careerLine {
                         display: flex;
                         margin-top: 20px;
                     }
 
                     .description {
-                        flex: 4;
-                        margin-right: 40px;
-                    }
-                    
-                    .info {
-                        flex: 1;
+                        padding-left: 20px;
                     }
 
                     .title {
@@ -45,6 +40,10 @@ export default class ListLine extends React.Component {
                     
                     .place {
                         font-style: italic;
+                    }
+
+                    .info {
+                        padding-left: 40px;
                     }
                 `}</style>
 
