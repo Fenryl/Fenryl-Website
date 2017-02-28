@@ -3,9 +3,8 @@ import Router from 'next/router'
 import Head from 'next/head'
 import Link from 'next/link'
 
+import Layout from '../components/layout'
 import Modal from '../components/modal'
-
-
 
 export default class extends React.Component {
   static getInitialProps () {
@@ -48,7 +47,7 @@ export default class extends React.Component {
     const { url, photos } = this.props
 
     return (
-      <div>
+      <Layout>
         <Head>
           <title>Bastien Cailhol - Bienvenue</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -104,7 +103,7 @@ export default class extends React.Component {
                 border-color: blue;
               }
             `}</style>
-      </div>
+      </Layout>
     )
   }
 }
