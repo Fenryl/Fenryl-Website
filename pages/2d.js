@@ -1,6 +1,5 @@
 import React from 'react'
 import Router from 'next/router'
-import Head from 'next/head'
 import Link from 'next/link'
 
 import Layout from '../components/layout'
@@ -47,11 +46,7 @@ export default class extends React.Component {
     const { url, photos } = this.props
 
     return (
-      <Layout>
-        <Head>
-          <title>Bastien Cailhol - Bienvenue</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        </Head>
+      <Layout title="2D">
         <div>
           <div className='list'>
             {

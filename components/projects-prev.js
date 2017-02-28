@@ -3,7 +3,7 @@ import React from 'react'
 
 import ProjectThumbnail from './project-tn'
 
-export default class Projects extends React.Component {
+export default class ProjectsPreview extends React.Component {
 
 
     render() {
@@ -16,22 +16,22 @@ export default class Projects extends React.Component {
                             title="Bastien Cailhol"
                             image="bastiencailhol.png"
                             description="ça marche?"
-                            link="BastienCailhol"/>
+                            path="BastienCailhol"/>
                         <ProjectThumbnail
                             title="Rogue Project"
                             image="rogueproject.png"
                             description="ça marche?"
-                            link="RogueProject"/>
+                            path="RogueProject"/>
                         <ProjectThumbnail
                             title="Yestudent"
                             image="yestudent.png"
                             description="ça marche?"
-                            link="Yestudent"/>
+                            path="Yestudent"/>
                         <ProjectThumbnail
                             title="Overblog"
                             image="overblog.png"
                             description="ça marche?"
-                            link="Overblog"/>
+                            path="Overblog"/>
                     </div>
                 </div>
                 <style jsx>{`

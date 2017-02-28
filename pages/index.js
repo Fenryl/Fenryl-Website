@@ -6,7 +6,8 @@ import Banner from '../components/banner'
 import Career from '../components/career'
 import Layout from '../components/layout'
 import Skills from '../components/skills'
-import Projects from '../components/projects'
+import Projects from '../components/projects-prev'
+import Illustrations from '../components/illu-prev'
 
 export default class extends React.Component {
 
@@ -18,11 +19,7 @@ export default class extends React.Component {
   render() {
 
     return (
-      <Layout>
-        <Head>
-          <title>Développement</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        </Head>
+      <Layout title="Bastien Cailhol - Bienvenue">
         <Banner />
 
         <i className="material-icons">face</i>
@@ -31,6 +28,7 @@ export default class extends React.Component {
         <Career />
         <Skills />
         <Projects />
+        <Illustrations />
         <div>
         </div>
 
