@@ -21,10 +21,6 @@ export default class extends React.Component {
     return (
       <Layout title="Bastien Cailhol - Bienvenue">
         <Banner />
-
-        <i className="material-icons">face</i>
-        <i className="fa fa-camera-retro"></i>
-        <i className="devicon-amazonwebservices-original"></i>
         <Career />
         <Skills />
         <Projects />

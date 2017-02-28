@@ -50,10 +50,9 @@ export default class IlluPreview extends React.Component {
                     }
 
                     .illu {
-                        height: 200px;
+                        height: 230px;
                         width: 33.33%;
                         margin: 10px 20px 10px 0;
-                        border: 1px solid black;
                     }
 
                     .illu:last-child {

@@ -10,7 +10,6 @@ export default class ProjectThumbnail extends React.Component {
         const {image, description, path} = this.props;
 
         return (
-            <div className="container">
                 <Link href={`/dev/${path}`} className="link">
                     <div className="illu-tn">
                         <img src={`/static/projects/${image}`} alt={`dessin`}/>
@@ -19,10 +18,6 @@ export default class ProjectThumbnail extends React.Component {
                         </div>
 
                         <style jsx>{`
-                            .container {
-                                width: 100%;
-                                height: 100%;
-                            }
 
                             .illu-tn {
                                 position: relative;
@@ -59,13 +54,13 @@ export default class ProjectThumbnail extends React.Component {
                             }
 
                             img {
+                                height: 100%;
                                 width: 100%;
                                 object-fit: cover;
                             }
                         `}</style>
                     </div>
                 </Link>
-            </div>
         )
     }
 }
