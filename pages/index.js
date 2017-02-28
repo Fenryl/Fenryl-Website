@@ -4,6 +4,7 @@ import Head from 'next/head'
 
 import Banner from '../components/banner'
 import Career from '../components/career'
+import Layout from '../components/layout'
 import Skills from '../components/skills'
 
 export default class extends React.Component {
@@ -16,7 +17,7 @@ export default class extends React.Component {
   render() {
 
     return (
-      <div>
+      <Layout>
         <Head>
           <title>Développement</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -31,7 +32,7 @@ export default class extends React.Component {
         <div>
         </div>
 
-      </div>
+      </Layout>
     )
   }
 }
