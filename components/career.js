@@ -17,6 +17,12 @@ export default class Studies extends React.Component {
                             city="Ramonville"
                         />
                         <CareerLine
+                            title="Certificat de praticien en massage bien-être, agrégé FFMBE"
+                            place="Institut Français des Sciences de l'Homme (IFSH)"
+                            date="2013 - 2014"
+                            city="Toulouse"
+                        />
+                        <CareerLine
                             title="Titre professionnel d'assistant réalisateur"
                             place="École des Métiers du Cinéma d'Animation (EMCA)"
                             date="2009 - 2012"

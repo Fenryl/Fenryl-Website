@@ -35,7 +35,7 @@ export default class CareerLine extends React.Component {
                     }
 
                     .title {
-                        color: red;
+                        color: #ed0000;
                     }
                     
                     .place {

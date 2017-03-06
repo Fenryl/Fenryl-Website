@@ -8,8 +8,7 @@ export default class ProjectsPreview extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="container col12">
+                <div className="projects col12">
                     <h4 className="title h5-like">Derniers projects Web</h4>
                     <div className="projectList">
                         <div className="project">
@@ -45,10 +44,9 @@ export default class ProjectsPreview extends React.Component {
                             />
                         </div>
                     </div>
-                </div>
                 <style jsx>{`
-                    .container {
-                        margin: auto;
+                    .projects {
+                        margin: 0 auto 40px;
                     }
 
                     .title {
@@ -63,7 +61,8 @@ export default class ProjectsPreview extends React.Component {
 
                     .project {
                         width: 25%;
-                        margin: 10px 20px 10px 0;
+                        margin: 20px 20px 0 0;
+                        margin-left: 0;
                         
                     }
 

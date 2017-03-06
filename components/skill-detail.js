@@ -7,9 +7,9 @@ export default class SkillDetail extends React.Component {
     render() {
         const {title, description, icon} = this.props;
         return (
-            <div className="skill col8">
-                <div className="icon col2">{icon}</div>
-                <div className="info col6">
+            <div className="skill col12">
+                <div className="icon col4">{icon}</div>
+                <div className="info col8">
                     <h3 className="title">{title}</h3>
                     {description}
                 </div>
@@ -21,8 +21,10 @@ export default class SkillDetail extends React.Component {
                         padding-left: 20px;
                     }
                     .icon {
-                        align-self: center;
-                        text-align: center;
+                        display: flex;
+                        height: 8em;
+                        align-items: center;
+                        justify-content: center;
                         color: black;
                     }
 

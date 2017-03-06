@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from "next/head"
-import Header from "./header"
+import Footer from "./footer"
 
 export default ({ children, title = 'This is the default title' }) => (
   <div>
@@ -14,7 +14,7 @@ export default ({ children, title = 'This is the default title' }) => (
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css"/>
       <script src="https://use.fontawesome.com/b3b5ad4973.js"></script>
     </Head>
-    <Header />
     {children}
+    <Footer />
   </div>
 )

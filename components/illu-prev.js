@@ -8,35 +8,35 @@ export default class IlluPreview extends React.Component {
     render() {
         return (
             <div>
-                <div className="container col12">
+                <div className="illustrations col12">
                     <h4 className="title h5-like">Dernières illustrations</h4>
                     <div className="illuList">
                         <div className="illu">
                             <IlluThumbnail
-                                image="bastiencailhol.png"
-                                description="pixel art"
-                                path="BastienCailhol"
+                                image="illu_mao.jpg"
+                                description="flat desgin"
+                                path="Mao"
                             />
                         </div>
                         <div className="illu">
                             <IlluThumbnail
-                                image="bastiencailhol.png"
-                                description="pixel art"
-                                path="BastienCailhol"
+                                image="illu_lordedmund.jpg"
+                                description="polygon"
+                                path="LordEdmund"
                             />
                         </div>
                         <div className="illu">
                             <IlluThumbnail
-                                image="bastiencailhol.png"
-                                description="pixel art"
-                                path="BastienCailhol"
+                                image="illu_bobby.jpg"
+                                description="digital painting"
+                                path="BobbyChiuTribute"
                             />  
                         </div>
                     </div>
                 </div>
                 <style jsx>{`
-                    .container {
-                        margin: auto;
+                    .illustrations {
+                        margin: 0 auto 40px;
                     }
 
                     .title {
@@ -52,7 +52,7 @@ export default class IlluPreview extends React.Component {
                     .illu {
                         height: 230px;
                         width: 33.33%;
-                        margin: 10px 20px 10px 0;
+                        margin: 20px 20px 0 0;
                     }
 
                     .illu:last-child {
