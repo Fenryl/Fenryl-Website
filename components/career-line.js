@@ -14,7 +14,9 @@ export default class CareerLine extends React.Component {
                     <p className="place">
                         {place}
                     </p>
-                    {details}
+                    <div className="details">
+                        {details}
+                    </div>
                 </div>
                 <div className="info col2">
                     <p className="date">
@@ -40,6 +42,10 @@ export default class CareerLine extends React.Component {
                     
                     .place {
                         font-style: italic;
+                    }
+
+                    .details {
+                        color: #777;
                     }
 
                     .info {

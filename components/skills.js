@@ -149,26 +149,17 @@ export default class Skills extends React.Component {
                         size="6em"/>
                 }
             ],
-            currentTitle: "",
-            currentDescription: "",
-            currentIcon: ""
+            currentSkill: "",
+            selectedSkill: ""
         }
     }
 
     setSkill(event) {
-        this.setState({
-            currentTitle: this.state.skills[event.target.value].name,
-            currentDescription: this.state.skills[event.target.value].description,
-            currentIcon: this.state.skills[event.target.value].icon
-        });
+        this.setState({ currentSkill: this.state.skills[event.target.value], selectedSkill: [event.target.value] });
     }
 
     componentWillMount() {
-        this.setState({
-            currentTitle: this.state.skills[0].name,
-            currentDescription: this.state.skills[0].description,
-            currentIcon: this.state.skills[0].icon
-        });
+        this.setState({ currentSkill: this.state.skills[0], selectedSkill: [0] });
     }
 
 
@@ -179,13 +170,13 @@ export default class Skills extends React.Component {
         return (
             <div className="skills">
                 <SkillDetail
-                    title={this.state.currentTitle}
-                    description={this.state.currentDescription}
-                    icon={this.state.currentIcon}
+                    title={this.state.currentSkill.title}
+                    description={this.state.currentSkill.description}
+                    icon={this.state.currentSkill.icon}
                 />
                 <div className="skillMenu col12" onChange={this.setSkill}>
                     {skillList.map((data, i) => (
-                        <label className="menuItem" key={`label_${i}`}>
+                        <label className={this.state.selectedSkill == i ? "checked menuItem" : "menuItem"} key={`label_${i}`}>
                             <input defaultChecked={i === 0} type="radio" name="skill" value={i}
                                    key={`label_${i}`}/>{data.name}
                         </label>
@@ -208,10 +199,16 @@ export default class Skills extends React.Component {
                     .menuItem {
                         flex: 1;
                         padding: 10px 0;
+                        text-align: center;
+                        background: #ddd;
                     }
 
                     .menuItem input {
-                        visibility: none;
+                        display: none;
+                    }
+
+                    .checked {
+                        background: #da4747;
                     }
                 `}</style>
             </div>
