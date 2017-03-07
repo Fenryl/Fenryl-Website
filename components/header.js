@@ -106,6 +106,7 @@ export default class Header extends React.Component {
 
             .menuItem a {
                 display: flex;
+                height: 45px;
                 padding: 10px;
                 align-items: center;
                 font-size: 1.2em;

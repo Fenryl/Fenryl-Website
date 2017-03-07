@@ -24,7 +24,7 @@ export default class Banner extends React.Component {
 
                 <style jsx>{`
                     .banner {
-                        padding: 60px 0 20px;
+                        padding: 20px 0;
                         background-color: #f6f6f6;
                     }
 

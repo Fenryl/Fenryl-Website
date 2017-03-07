@@ -1,79 +1,79 @@
 import React from 'react'
 import Router from 'next/router'
-import Link from 'next/link'
 
 import Layout from '../components/layout'
+import Header from '../components/header'
 import Modal from '../components/modal'
 
 export default class extends React.Component {
-  static getInitialProps () {
+  static getInitialProps() {
     return {
       photos: new Array(15).fill(0).map((v, k) => k + 1)
     }
   }
 
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.onKeyDown = this.onKeyDown.bind(this)
   }
 
   // handling escape close
-  componentDidMount () {
+  componentDidMount() {
     document.addEventListener('keydown', this.onKeyDown)
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     document.removeEventListener('keydown', this.onKeyDown)
   }
 
-  onKeyDown (e) {
+  onKeyDown(e) {
     if (!this.props.url.query.photoId) return
     if (e.keyCode === 27) {
       this.props.url.back()
     }
   }
 
-  dismissModal () {
+  dismissModal() {
     Router.push('/2d')
   }
 
-  showPhoto (e, id) {
+  showPhoto(e, id) {
     e.preventDefault()
     Router.push(`/2d/?photoId=${id}`, `2d/photo?id=${id}`)
   }
 
-  render () {
+  render() {
     const { url, photos } = this.props
+    console.log(photos);
 
     return (
       <Layout title="2D">
-        <div>
-          <div className='list'>
-            {
-              url.query.photoId &&
-                <Modal
-                  id={url.query.photoId}
-                  onDismiss={() => this.dismissModal()}
-                />
-            }
-            {
-              photos.map((id) => (
-                <div key={id} className='photo'>
-                  <a
-                    className='photoLink'
-                    href={`/2d/photo?id=${id}`}
-                    onClick={(e) => this.showPhoto(e, id)}
-                  >
-                    {id}
-                  </a>
-                </div>
-              ))
-            }
-          </div>
+        <Header focus="2d"/>
+        <div className='list'>
+          {
+            url.query.photoId &&
+            <Modal
+              id={url.query.photoId}
+              onDismiss={() => this.dismissModal()}
+            />
+          }
+          {
+            photos.map((id) => (
+              <div key={id} className='photo'>
+                <a
+                  className='photoLink'
+                  href={`/2d/photo?id=${id}`}
+                  onClick={(e) => this.showPhoto(e, id)}
+                >
+                  {id}
+                </a>
+              </div>
+            ))
+          }
         </div>
         <style jsx>{`
               .list {
-                padding: 50px;
+                padding: 45px;
                 text-align: center;
               }
 

@@ -224,7 +224,7 @@ export default class Skills extends React.Component {
                     }
 
                     .checked, .checked:hover {
-                        background: #da4747;
+                        background: #d92020;
                         color: white;
                     }
                 `}</style>

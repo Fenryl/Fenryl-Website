@@ -2,10 +2,10 @@ import React from 'react'
 import Router from 'next/router'
 import Head from 'next/head'
 
+import Layout from '../components/layout'
 import Header from '../components/header'
 import Banner from '../components/banner'
 import Career from '../components/career'
-import Layout from '../components/layout'
 import Skills from '../components/skills'
 import Projects from '../components/projects-prev'
 import Illustrations from '../components/illu-prev'
@@ -22,13 +22,19 @@ export default class extends React.Component {
 
     return (
       <Layout title="Bastien Cailhol - Bienvenue">
-        <Header focus="home"/>
-        <Banner />
-        <Career />
-        <Skills />
-        <Projects />
-        <Illustrations />
-        <Contact />
+        <Header focus="home" />
+        <div className="content">
+          <Banner />
+          <Career />
+          <Skills />
+          <Projects />
+          <Illustrations />
+          <Contact />
+        </div>
+        <style jsx>{`
+          .content {
+            padding: 45px;
+        `}</style>
 
       </Layout>
     )

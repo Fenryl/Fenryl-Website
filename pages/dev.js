@@ -1,25 +1,35 @@
 import React from 'react'
 import Router from 'next/router'
+import Head from 'next/head'
 
 import Layout from '../components/layout'
+import Header from '../components/header'
+import Banner from '../components/banner'
+import Career from '../components/career'
+import Skills from '../components/skills'
+import Projects from '../components/projects-prev'
+import Illustrations from '../components/illu-prev'
+import Contact from '../components/contact'
 
 export default class extends React.Component {
-  static getInitialProps () {
-    return {
-    }
-  }
 
-  constructor (props) {
+  constructor(props) {
     super(props)
   }
 
 
-  render () {
+  render() {
 
     return (
-      <Layout title="Développement">
-        <div>
-        </div>
+      <Layout title="Bastien Cailhol - Bienvenue">
+        <Header focus="dev"/>
+        <Banner />
+        <Career />
+        <Skills />
+        <Projects />
+        <Illustrations />
+        <Contact />
+
       </Layout>
     )
   }
