@@ -235,3 +235,6 @@ body > script {display: none !important;}
 .col12 {
     width: 960px;
 }
+.col16 {
+    width: 1280px;
+}

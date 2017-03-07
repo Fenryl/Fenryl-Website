@@ -6,7 +6,7 @@ import Icon from './icon'
 
 export default () => (
     <div className="footer">
-        <p className="h5-like">BASTIEN CAILHOL</p>
+        <p>Copyright © 2012 | Bastien Cailhol</p>
         <nav className="menu">
             <ul>
                 <li><Link prefetch href='/index'><a>Home</a></Link></li>

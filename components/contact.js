@@ -6,7 +6,7 @@ import Icon from './icon'
 
 export default () => (
     <div className="contact">
-        <ul className="contactList">
+        <ul className="contactList col16">
             <li className="contactItem">
                 <a href="mailto:bastien.cailhol@gmail.com">
                     <Icon
@@ -59,11 +59,16 @@ export default () => (
             </li>
         </ul>
         <style jsx>{`
+            .contact {
+                display: flex;
+                justify-content: center;
+                background: #f6f6f6;
+            }
+
             .contactList {
                 display: flex;
                 padding: 20px 0;
                 align-items: baseline;
-                background: #f6f6f6;
             }
 
             .contactItem {
@@ -73,6 +78,10 @@ export default () => (
                 padding: 20px 0;
                 align-items: center;
                 border-right: 2px solid #e6e6e6;
+            }
+
+            .contactItem:first-child {
+                border-left: 2px solid #e6e6e6;
             }
 
             .contactItem a {

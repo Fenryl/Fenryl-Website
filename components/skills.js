@@ -117,7 +117,7 @@ export default class Skills extends React.Component {
                         viewBox="128" size="9em"/>
                 },
                 {
-                    name: "Design graphique",
+                    name: "Graphisme",
                     description:
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -199,16 +199,35 @@ export default class Skills extends React.Component {
                     .menuItem {
                         flex: 1;
                         padding: 10px 0;
+                        margin-left: 4px;
                         text-align: center;
+                        background: #d1d1d1;
+                    }
+
+                    .menuItem:first-child {
+                        margin-left: 0;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                    }
+
+                    .menuItem:last-child {
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+
+                    .menuItem:hover, .checked {
                         background: #ddd;
+                        box-shadow: 0px 2px 3px rgba(0,0,0,.15), 0px 0px 10px rgba(0,0,0,.05);
+                        z-index: 10;
                     }
 
                     .menuItem input {
                         display: none;
                     }
 
-                    .checked {
+                    .checked, .checked:hover {
                         background: #da4747;
+                        color: white;
                     }
                 `}</style>
             </div>

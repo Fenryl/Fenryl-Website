@@ -28,12 +28,6 @@ export default class Studies extends React.Component {
                             date="2009 - 2012"
                             city="Angoulême"
                         />
-                        <CareerLine
-                            title="Baccalauréat ES (mention AB)"
-                            place="Lycée Victor Hugo"
-                            date="2007"
-                            city="Colomiers"
-                        />
                     </div>
                 </div>
                 <div className="experiences col12">
@@ -72,10 +66,14 @@ export default class Studies extends React.Component {
                     </div>
                 </div>
                 <style jsx>{`
+                    .career {
+                        margin-bottom: 40px;
+                    }
+
                     .studies, .experiences {
                         display: flex;
                         justify-content: space-between;
-                        margin: 0 auto 40px;
+                        margin: 0 auto 20px;
                     }
 
                     .title {
