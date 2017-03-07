@@ -17,7 +17,7 @@ export default () => (
                 <span>bastien.cailhol@gmail.com</span>
             </li>
             <li className="contactItem">
-                <a href="https://www.linkedin.com/in/BastienCailhol/">
+                <a href="https://www.linkedin.com/in/BastienCailhol/" target="_blank">
                     <Icon
                         path={`M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 
                         15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z`}
@@ -27,7 +27,7 @@ export default () => (
                 <span>linkedin.com/in/BastienCailhol</span>
             </li>
             <li className="contactItem">
-                <a href="https://github.com/Fenryl">
+                <a href="https://github.com/Fenryl" target="_blank">
                     <Icon
                         path={`M20.38,8.53C20.54,8.13 21.06,6.54 20.21,4.39C20.21,4.39 18.9,4 15.91,6C14.66,5.67 13.33,5.62 
                             12,5.62C10.68,5.62 9.34,5.67 8.09,6C5.1,3.97 3.79,4.39 3.79,4.39C2.94,6.54 3.46,8.13 3.63,8.53C2.61,9.62 
@@ -43,7 +43,7 @@ export default () => (
                 <span>github.com/Fenryl</span>
             </li>
             <li className="contactItem">
-                <a href="https://twitter.com/BastienCailhol">
+                <a href="https://twitter.com/BastienCailhol" target="_blank">
                     <Icon
                         path={`M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 
                         20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 
