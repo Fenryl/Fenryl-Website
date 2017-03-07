@@ -90,7 +90,7 @@ export default () => (
             }
 
             .contactItem a:hover {
-                transform: scale(1.1);
+                transform: rotate(5deg) scale(1.1);
             }
 
             .contactItem span {

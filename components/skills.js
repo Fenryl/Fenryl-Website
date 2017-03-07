@@ -201,7 +201,7 @@ export default class Skills extends React.Component {
                         padding: 10px 0;
                         margin-left: 4px;
                         text-align: center;
-                        background: #d1d1d1;
+                        background: #ddd;
                     }
 
                     .menuItem:first-child {
@@ -216,9 +216,7 @@ export default class Skills extends React.Component {
                     }
 
                     .menuItem:hover, .checked {
-                        background: #ddd;
-                        box-shadow: 0px 2px 3px rgba(0,0,0,.15), 0px 0px 10px rgba(0,0,0,.05);
-                        z-index: 10;
+                        background: #bbb;
                     }
 
                     .menuItem input {
