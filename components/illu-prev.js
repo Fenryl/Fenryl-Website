@@ -13,21 +13,21 @@ export default class IlluPreview extends React.Component {
                     <div className="illuList">
                         <div className="illu">
                             <IlluThumbnail
-                                image="illu_mao.jpg"
+                                image="mao.jpg"
                                 description="flat desgin"
                                 path="Mao"
                             />
                         </div>
                         <div className="illu">
                             <IlluThumbnail
-                                image="illu_lordedmund.jpg"
+                                image="lordedmund.jpg"
                                 description="polygon"
                                 path="LordEdmund"
                             />
                         </div>
                         <div className="illu">
                             <IlluThumbnail
-                                image="illu_bobby.jpg"
+                                image="bobby.jpg"
                                 description="digital painting"
                                 path="BobbyChiuTribute"
                             />  

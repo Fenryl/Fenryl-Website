@@ -3,7 +3,7 @@ import Head from "next/head"
 import Footer from "./footer"
 
 export default ({ children, title = 'This is the default title' }) => (
-  <div>
+  <div className="layout">
     <Head>
       <title>{ title }</title>
       <meta charSet='utf-8' />
@@ -14,7 +14,13 @@ export default ({ children, title = 'This is the default title' }) => (
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css"/>
       <script src="https://use.fontawesome.com/b3b5ad4973.js"></script>
     </Head>
-    {children}
-    <Footer />
+    <div className="content">{children}</div>
+    <style jsx>{`
+      .content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+    `}</style>
   </div>
 )

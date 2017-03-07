@@ -18,6 +18,14 @@ body {
     line-height: 1.5; /* adapt to your design */
 }
 
+html, body, #__next, #__next > div, .layout {
+    height: 100%;
+}
+
+.pageContent {
+    flex: 1;
+}
+
 /* font-sizing for content */
 /* preserve vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */
 p,

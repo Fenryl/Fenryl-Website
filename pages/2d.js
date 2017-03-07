@@ -3,12 +3,18 @@ import Router from 'next/router'
 
 import Layout from '../components/layout'
 import Header from '../components/header'
+import Footer from '../components/footer'
 import Modal from '../components/modal'
 
 export default class extends React.Component {
   static getInitialProps() {
     return {
-      photos: new Array(15).fill(0).map((v, k) => k + 1)
+      photos: [
+        {name: "bobby.jpg", type: "illu"},
+        {name: "appart.jpg", type: "dessin"},
+        {name: "danseuse.jpg", type: "illu"},
+        {name: "candy_hero.png", type: "pixel"},
+      ]
     }
   }
 
@@ -49,7 +55,7 @@ export default class extends React.Component {
     return (
       <Layout title="2D">
         <Header focus="2d"/>
-        <div className='list'>
+        <div className='list pageContent'>
           {
             url.query.photoId &&
             <Modal
@@ -58,19 +64,20 @@ export default class extends React.Component {
             />
           }
           {
-            photos.map((id) => (
-              <div key={id} className='photo'>
+            photos.map((elem, i) => (
+              <div key={i} className='photo'>
                 <a
                   className='photoLink'
-                  href={`/2d/photo?id=${id}`}
-                  onClick={(e) => this.showPhoto(e, id)}
+                  href={`/2d/photo?id=${i}`}
+                  onClick={(event) => this.showPhoto(event, i)}
                 >
-                  {id}
+                  {elem.name}
                 </a>
               </div>
             ))
           }
         </div>
+        <Footer />
         <style jsx>{`
               .list {
                 padding: 45px;

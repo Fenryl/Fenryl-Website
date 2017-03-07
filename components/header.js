@@ -92,6 +92,7 @@ export default class Header extends React.Component {
                 z-index: 999;
                 width: 100%;
                 background: #ddd;
+                box-shadow: 0 1px 0 rgba(0,0,0,.1);
             }
 
             .menu ul {
