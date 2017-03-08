@@ -15,7 +15,7 @@ export default class ProjectsPreview extends React.Component {
                             <ProjectThumbnail
                                 title="Bastien Cailhol"
                                 image="bastiencailhol.png"
-                                description="ça marche?"
+                                description="Mon site perso"
                                 path="BastienCailhol"
                             />
                         </div>
@@ -23,7 +23,7 @@ export default class ProjectsPreview extends React.Component {
                             <ProjectThumbnail
                                 title="Rogue Project"
                                 image="rogueproject.png"
-                                description="ça marche?"
+                                description="Jeu vidéo en JavaScript"
                                 path="RogueProject"
                             />
                         </div>
@@ -31,7 +31,7 @@ export default class ProjectsPreview extends React.Component {
                             <ProjectThumbnail
                                 title="Yestudent"
                                 image="yestudent.png"
-                                description="ça marche?"
+                                description="Site d'hébergement entre étudiants"
                                 path="Yestudent"
                             />
                         </div>
@@ -39,7 +39,7 @@ export default class ProjectsPreview extends React.Component {
                             <ProjectThumbnail
                                 title="Overblog"
                                 image="overblog.png"
-                                description="ça marche?"
+                                description="Plateforme de blog?"
                                 path="Overblog"
                             />
                         </div>
