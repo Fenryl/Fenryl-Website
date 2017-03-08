@@ -26,18 +26,23 @@ export default ({image, description, path}) => (
                 }
 
                 .illu-tn:hover .info {
-                    display: block;
+                    transform: translateY(0);
                 }
 
                 .illu-tn:hover img {
                     transform: translateY(-5px) scale(1.1);
                 }
 
+                .illu-tn, .info, img {
+                    transition: all .1s ease-out;
+                }
+
+
                 .info {
-                    display: none;
                     position: absolute;
                     width: 100%;
                     bottom: 0;
+                    transform: translateY(100%);
                     padding: 10px;
                     background: #f6f6f6;
                 }

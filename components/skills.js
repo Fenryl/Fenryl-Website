@@ -219,6 +219,10 @@ export default class Skills extends React.Component {
                         background: #bbb;
                     }
 
+                    .menuItem {
+                        transition: all .1s ease-out;
+                    }
+
                     .menuItem input {
                         display: none;
                     }

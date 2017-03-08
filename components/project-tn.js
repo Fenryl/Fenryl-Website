@@ -30,7 +30,11 @@ export default ({ title, image, description, path }) => (
             }
 
             .project-tn:hover img {
-                    transform: translateY(-5px) scale(1.05);
+                transform: translateY(-5px) scale(1.05);
+            }
+
+            .project-tn, .project-tn img {
+                transition: all .1s ease-out;
             }
 
             .info {

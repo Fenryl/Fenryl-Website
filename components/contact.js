@@ -92,6 +92,10 @@ export default () => (
             .contactItem a:hover {
                 transform: rotate(5deg) scale(1.1);
             }
+            
+            .contactItem a {
+                transition: all .05s ease-out;
+            }
 
             .contactItem span {
                 color: #888;
@@ -100,17 +104,6 @@ export default () => (
             ul {
                 padding: 0;
                 list-style: none;
-            }
-
-            .menu li {
-                display: inline-block;
-                margin: 0 10px;
-                text-transform: uppercase;
-            }
-
-            .menu li a {
-                color: white;
-                text-decoration: none;
             }
         `}</style>
     </div>

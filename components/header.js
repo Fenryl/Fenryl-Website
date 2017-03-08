@@ -127,10 +127,15 @@ export default class Header extends React.Component {
             .menuItem:hover a {
                 background: #bbb;
             }
+            
 
             .menuItem:hover .icon {
                 transform: translateY(-5px);
             }
+
+            .menuItem .icon, .menuItem a {
+                transition: all .1s ease-in-out;  
+            } 
 
             .menuText {
               margin-left: 3px;

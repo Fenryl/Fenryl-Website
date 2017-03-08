@@ -19,10 +19,12 @@ export default () => (
         <style jsx>{`
             .footer {
                 display: flex;
+                padding: 0 10px;
                 align-items: baseline;
                 justify-content: space-between;
                 background: #ddd;
             }
+
 
             .menu li {
                 padding: 8px 0;
@@ -39,6 +41,10 @@ export default () => (
             .menu li:hover {
                 color: #d92020;
                 background: #bbb;
+            }
+
+            .menu li {
+                transition: all .1s ease-out;
             }
         `}</style>
     </div>
