@@ -68,8 +68,8 @@ export default class Header extends React.Component {
                 <span className="menuText">3D</span>
               </a>
             </Link></li>
-            <li className="menuItem"><Link href='/contact'>
-              <a>
+            <li className="menuItem"><Link>
+              <a href='#contact'>
                 <span className="icon">
                   <Icon path={`M23.55 12.2c0 .55-.13 1.25-.22 1.63-.25.98-.72 1.83-1.4 2.6-.74.84-1.66 1.44-2.74 1.8-.7.23-1.4.32-2.13.32h-9.9c
                 -.14 0-.3.04-.42.1L2.57 20.6l-2.12.97V11c0-.05 0-.6.03-1.33.1-.97.4-1.88.92-2.7.6-.98 1.4-1.74 2.4-2.28.95-.53 1.98-.77 

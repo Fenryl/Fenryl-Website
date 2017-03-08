@@ -19,21 +19,26 @@ export default () => (
         <style jsx>{`
             .footer {
                 display: flex;
-                padding: 10px;
                 align-items: baseline;
                 justify-content: space-between;
                 background: #ddd;
             }
 
             .menu li {
+                padding: 8px 0;
                 display: inline-block;
-                margin: 0 10px;
                 text-transform: uppercase;
             }
 
             .menu li a {
+                padding: 10px;
                 color: black;
                 text-decoration: none;
+            }
+
+            .menu li:hover {
+                color: #d92020;
+                background: #bbb;
             }
         `}</style>
     </div>

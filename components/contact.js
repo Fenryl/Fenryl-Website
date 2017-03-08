@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Icon from './icon'
 
 export default () => (
-    <div className="contact">
+    <div id="contact">
         <ul className="contactList col16">
             <li className="contactItem">
                 <a href="mailto:bastien.cailhol@gmail.com">
@@ -59,7 +59,7 @@ export default () => (
             </li>
         </ul>
         <style jsx>{`
-            .contact {
+            #contact {
                 display: flex;
                 justify-content: center;
                 background: #f6f6f6;
