@@ -86,13 +86,18 @@ export default class Header extends React.Component {
             </Link></li>
           </ul>
         </nav>
+        <div className="offset"></div>
         <style jsx>{`
-            .header {
+            .menu {
                 position: fixed;
                 z-index: 999;
                 width: 100%;
                 background: #ddd;
-                box-shadow: 0 1px 0 rgba(0,0,0,.1);
+                box-shadow: 0 1px 0 rgba(0,0,0,.15);
+            }
+
+            .offset {
+              margin-bottom: 45px;
             }
 
             .menu ul {

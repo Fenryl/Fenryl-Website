@@ -34,8 +34,6 @@ export default class extends React.Component {
           <Footer />
         </div>
         <style jsx>{`
-          .index {
-            padding-top: 45px;
         `}</style>
 
       </Layout>
