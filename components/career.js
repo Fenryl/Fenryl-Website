@@ -66,20 +66,14 @@ export default class Studies extends React.Component {
                 </div>
                 <style jsx>{`
                     .career {
-                        margin-bottom: 40px;
+                        padding-bottom: 20px;
                     }
 
                     .studies, .experiences {
                         display: flex;
                         justify-content: space-between;
-                        margin: 0 auto 20px;
-                    }
-
-                    .title {
-                        margin-top: 20px;
-                        text-transform: uppercase;
-                        font-weight: bold;
-
+                        padding: 20px 0;
+                        margin: auto;
                     }
 
                     .careerLines {

@@ -8,10 +8,10 @@ export default class Banner extends React.Component {
             <div className="banner">
                 <div className="container col12">
                     <div className="avatar col2">
-                        <img src="/static/id/ID_Background.png" alt="avatar" />
+                        <img src="/static/id/ID.png" alt="avatar" />
                     </div>
                     <div className="about col8">
-                        <h2>Bastien Cailhol</h2>
+                        <h2>BASTIEN CAILHOL</h2>
                         <h3>Développeur Web & Infographiste 2D/3D</h3>
                         <p>
                             Issu d'une double formation en cinéma d'animation et en développement web et logiciel, 
@@ -52,6 +52,10 @@ export default class Banner extends React.Component {
 
                     .about {
                         padding-left: 20px;
+                    }
+
+                    h2, h3 {
+                        font-family: 'open sans';
                     }
 
                     p {

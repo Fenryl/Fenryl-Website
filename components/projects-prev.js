@@ -46,13 +46,8 @@ export default class ProjectsPreview extends React.Component {
                     </div>
                 <style jsx>{`
                     .projects {
-                        margin: 0 auto 40px;
-                    }
-
-                    .title {
-                        margin-top: 20px;
-                        text-transform: uppercase;
-                        font-weight: bold;
+                        padding-top: 40px;
+                        margin: 0 auto;
                     }
 
                     .projectList {

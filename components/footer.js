@@ -23,6 +23,7 @@ export default () => (
                 align-items: baseline;
                 justify-content: space-between;
                 background: #ddd;
+                font-family: 'open sans';
             }
 
 

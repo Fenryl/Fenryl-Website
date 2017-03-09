@@ -100,11 +100,6 @@ export default () => (
             .contactItem span {
                 color: #888;
             }
-
-            ul {
-                padding: 0;
-                list-style: none;
-            }
         `}</style>
     </div>
 )

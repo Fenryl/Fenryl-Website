@@ -13,7 +13,7 @@ html {
 body {
     background-color: #fff;
     color: #000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.4em; /* equiv 14px */
     line-height: 1.5; /* adapt to your design */
 }
@@ -90,6 +90,10 @@ h6, .h6-like {
     margin: 0;
 }
 
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
 /* alternate font-sizing */
 .smaller {
     font-size: .7143em; /* equiv 10px */
@@ -129,6 +133,11 @@ samp {
 }
 code { line-height: 1em; }
 table { margin-bottom: 1.5em; }
+
+ul {
+    padding: 0;
+    list-style: none;
+}
 
 /* avoid top margins on first content element */
 p:first-child,

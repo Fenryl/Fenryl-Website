@@ -17,8 +17,7 @@ export default class SkillDetail extends React.Component {
                 <style jsx>{`
                     .skill {
                         display: flex;
-                        margin: 0 auto 20px;
-                        padding-left: 20px;
+                        padding: 20px;
                     }
                     .icon {
                         display: flex;

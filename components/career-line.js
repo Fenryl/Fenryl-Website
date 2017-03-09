@@ -8,7 +8,7 @@ export default class CareerLine extends React.Component {
         return (
             <div className="careerLine">
                 <div className="description col8">
-                    <h5 className="title">
+                    <h5 className="header">
                         {title}
                     </h5>
                     <p className="place">
@@ -32,11 +32,15 @@ export default class CareerLine extends React.Component {
                         margin-top: 20px;
                     }
 
+                    .careerLine:first-child {
+                        margin-top: 0;
+                    }
+
                     .description {
                         padding-left: 20px;
                     }
 
-                    .title {
+                    .header {
                         color: #ed0000;
                     }
                     

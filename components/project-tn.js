@@ -9,7 +9,7 @@ export default ({ title, image, description, path }) => (
                 <img src={`/static/projects/${image}`} alt={`${title} thumbnail`} />
             </div>
             <div className="info">
-                <h4 className="title">{title}</h4>
+                <h4 className="header">{title}</h4>
                 <p className="description">{description}</p>
             </div>
 

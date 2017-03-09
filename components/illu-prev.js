@@ -10,39 +10,34 @@ export default class IlluPreview extends React.Component {
             <div>
                 <div className="illustrations col12">
                     <h4 className="title h5-like">Dernières illustrations</h4>
-                    <div className="illuList">
-                        <div className="illu">
+                    <ul className="illuList">
+                        <li className="illu">
                             <IlluThumbnail
                                 image="mao.jpg"
                                 description="flat desgin"
                                 path="Mao"
                             />
-                        </div>
-                        <div className="illu">
+                        </li>
+                        <li className="illu">
                             <IlluThumbnail
                                 image="lordedmund.jpg"
                                 description="polygon"
                                 path="LordEdmund"
                             />
-                        </div>
-                        <div className="illu">
+                        </li>
+                        <li className="illu">
                             <IlluThumbnail
                                 image="bobby.jpg"
                                 description="digital painting"
                                 path="BobbyChiuTribute"
                             />  
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
                 <style jsx>{`
                     .illustrations {
-                        margin: 0 auto 40px;
-                    }
-
-                    .title {
-                        margin-top: 20px;
-                        text-transform: uppercase;
-                        font-weight: bold;
+                        padding: 40px 0;
+                        margin: 0 auto;
                     }
 
                     .illuList {

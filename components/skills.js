@@ -169,26 +169,32 @@ export default class Skills extends React.Component {
 
         return (
             <div className="skills">
-                <SkillDetail
-                    title={this.state.currentSkill.title}
-                    description={this.state.currentSkill.description}
-                    icon={this.state.currentSkill.icon}
-                />
-                <div className="skillMenu col12" onChange={this.setSkill}>
-                    {skillList.map((data, i) => (
-                        <label className={this.state.selectedSkill == i ? "checked menuItem" : "menuItem"} key={`label_${i}`}>
-                            <input defaultChecked={i === 0} type="radio" name="skill" value={i}
-                                   key={`label_${i}`}/>{data.name}
-                        </label>
-                    ))
-                    }
+                <div className="container col12">
+                    <h4 className="title h5-like">Compétences</h4>
+                    <SkillDetail
+                        title={this.state.currentSkill.title}
+                        description={this.state.currentSkill.description}
+                        icon={this.state.currentSkill.icon}
+                    />
+                    <div className="skillMenu" onChange={this.setSkill}>
+                        {skillList.map((data, i) => (
+                            <label className={this.state.selectedSkill == i ? "checked menuItem" : "menuItem"} key={`label_${i}`}>
+                                <input defaultChecked={i === 0} type="radio" name="skill" value={i}
+                                       key={`label_${i}`}/>{data.name}
+                            </label>
+                        ))
+                        }
+                    </div>
                 </div>
 
                 <style jsx>{`
                     .skills {
-                        margin-bottom: 40px;
                         padding: 20px 0;
                         background-color: #f6f6f6;
+                    }
+
+                    .container {
+                        margin: auto;
                     }
 
                     .skillMenu {
