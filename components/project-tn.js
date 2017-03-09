@@ -25,16 +25,8 @@ export default ({ title, image, description, path }) => (
                 overflow: hidden;
             }
 
-            .project-tn:hover {
-                box-shadow: 0px 6px 10px 0px #c4c4c4, 0px 0px 20px 0px #f1f1f1;
-            }
-
             .project-tn:hover img {
                 transform: translateY(-5px) scale(1.05);
-            }
-
-            .project-tn, .project-tn img {
-                transition: all .1s ease-out;
             }
 
             .info {
@@ -55,6 +47,7 @@ export default ({ title, image, description, path }) => (
                 width: 100%;
                 object-fit: contain;
                 margin: auto;
+                transition: all .1s ease-out;
             }
             `}</style>
         </div>

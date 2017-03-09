@@ -21,10 +21,6 @@ export default ({image, description, path}) => (
                     overflow: hidden;
                 }
 
-                .illu-tn:hover {
-                    box-shadow: 0px 6px 10px 0px #c4c4c4, 0px 0px 20px 0px #f1f1f1;
-                }
-
                 .illu-tn:hover .info {
                     transform: translateY(0);
                 }

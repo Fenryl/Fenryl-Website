@@ -10,13 +10,19 @@ export default class Banner extends React.Component {
                     <div className="avatar col2">
                         <img src="/static/id/ID_Background.png" alt="avatar" />
                     </div>
-                    <div className="about col10">
+                    <div className="about col8">
                         <h2>Bastien Cailhol</h2>
-                        <h3>Développeur Web & Designer</h3>
+                        <h3>Développeur Web & Infographiste 2D/3D</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Issu d'une double formation en cinéma d'animation et en développement web et logiciel, 
+                            je cherche actuellement une entreprise pour enrichir son équipe et mes connaissances.
+                        </p>
+                        <p>
+                            Si ce site a pour fonction de présenter les projets sur lesquels j'ai travaillé
+                            et partager mes dernières créations, il me sert aussi de lieu d'expérimentation et d'apprentissage.
+                        </p>
+                        <p>
+                            Bonne visite à vous !
                         </p>
 
                     </div>
@@ -46,7 +52,6 @@ export default class Banner extends React.Component {
 
                     .about {
                         padding-left: 20px;
-                        padding-right: 40px;
                     }
 
                     p {
