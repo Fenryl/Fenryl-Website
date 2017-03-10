@@ -16,7 +16,7 @@ export default ({ title, image, description, path }) => (
       <style jsx>{`
             .project-tn {
                 width: 225px;
-                background: #f6f6f6;
+                background: #f3f3f3;
                 border-radius: 3px;
                 cursor: pointer;
             }

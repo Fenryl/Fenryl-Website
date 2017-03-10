@@ -62,7 +62,7 @@ export default () => (
             #contact {
                 display: flex;
                 justify-content: center;
-                background: #f6f6f6;
+                background: #f3f3f3;
             }
 
             .contactList {

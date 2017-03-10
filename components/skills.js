@@ -192,7 +192,7 @@ export default class Skills extends React.Component {
         <style jsx>{`
                     .skills {
                         padding: 20px 0;
-                        background-color: #f6f6f6;
+                        background-color: #f3f3f3;
                     }
 
                     .container {
@@ -209,7 +209,7 @@ export default class Skills extends React.Component {
                         padding: 10px 0;
                         margin-left: 4px;
                         text-align: center;
-                        background: #ddd;
+                        background: #ccc;
                     }
 
                     .menuItem:first-child {

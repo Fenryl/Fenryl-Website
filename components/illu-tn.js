@@ -40,7 +40,7 @@ export default ({image, description, path}) => (
                     bottom: 0;
                     transform: translateY(100%);
                     padding: 10px;
-                    background: #f6f6f6;
+                    background: #f3f3f3;
                 }
 
                 .description {

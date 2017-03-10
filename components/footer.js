@@ -22,7 +22,7 @@ export default () => (
                 padding: 0 10px;
                 align-items: baseline;
                 justify-content: space-between;
-                background: #ddd;
+                background: #ccc;
                 font-family: 'open sans';
             }
 

@@ -90,7 +90,7 @@ export default class Header extends React.Component {
                 position: fixed;
                 z-index: 999;
                 width: 100%;
-                background: #ddd;
+                background: #ccc;
                 font-family: 'open sans';
                 box-shadow: 0 1px 0 rgba(0,0,0,.15);
             }

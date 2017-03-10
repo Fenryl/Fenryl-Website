@@ -29,7 +29,7 @@ export default class Banner extends React.Component {
         <style jsx>{`
                     .banner {
                         padding: 20px 0;
-                        background-color: #f6f6f6;
+                        background-color: #f3f3f3;
                     }
 
                     .container {
