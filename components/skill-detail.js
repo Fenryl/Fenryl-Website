@@ -1,15 +1,15 @@
 import React from 'react'
 
 export default class SkillDetail extends React.Component {
-  render () {
-    const {title, description, img} = this.props
+  render() {
+    const { name, description, img } = this.props
     return (
       <div className='skill col12'>
         <div className='icon col4'>
-          <img src={`/static/skills/${img}.png`} alt={title} />
+          <img src={`/static/skills/${img}.png`} alt={name} />
         </div>
         <div className='info col8'>
-          <h3 className='title'>{title}</h3>
+          <h3 className='title'>{name}</h3>
           {description}
         </div>
 
@@ -27,6 +27,10 @@ export default class SkillDetail extends React.Component {
 
                     .info {
                         padding-left: 20px;
+                    }
+
+                    .title {
+                        font-size: 2em;
                     }
 
                 `}</style>

@@ -46,10 +46,6 @@ export default class CareerLine extends React.Component {
                         font-style: italic;
                     }
 
-                    .details {
-                        color: #777;
-                    }
-
                     .info {
                         padding-left: 40px;
                     }

@@ -174,7 +174,7 @@ export default class Skills extends React.Component {
         <div className='container col12'>
           <h4 className='title h5-like'>Compétences</h4>
           <SkillDetail
-            title={this.state.currentSkill.title}
+            name={this.state.currentSkill.name}
             description={this.state.currentSkill.description}
             img={this.state.currentSkill.img}
                     />

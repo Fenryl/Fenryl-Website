@@ -37,19 +37,33 @@ export default class Studies extends React.Component {
               place='Yestudent'
               date='2016'
               city='Toulouse'
-              details={<p className='details'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat.</p>}
+              details={
+                <ul>
+                  <li className='details'>
+                    <p>Développement de la page d'annonce pour nouvelle version du site Yestudent.com.</p>
+                    <p className="skills">React, Redux, Stylus, jQuery</p>
+                  </li>
+                  <li className='details'>
+                    <p>Maintenance de la page paiement sur l'ancienne version.</p>
+                    <p className="skills">AngularJS, Jade, Stylus</p>
+                  </li>
+                  <li className='details'>
+                    <p>Évolution du CRM.</p>
+                    <p className="skills">Webdesign</p>
+                  </li>
+                </ul>}
                         />
             <CareerLine
-              title='Stagiaire webdesigner et développeur front-end'
+              title='Stagiaire développeur front-end'
               place='Overblog'
               date='2016'
               city='Toulouse'
-              details={<p className='details'>J’ai été en charge de développer un template graphique
-                                sur le thème de la cuisine. Les blogs culinaires représentent une part importante
-                                des hébergements sur la plateforme, mais aucun thème dédié n’avait encore été créé.</p>}
+              details={
+                <div className='details'>
+                  <p>Développement d'un thème de blog personnalisable, responsive et multi-plateformes.</p>
+                  <p className="skills">Web design, HTML, CSS, Twig, jQuery</p>
+                </div>
+              }
                         />
           </div>
         </div>
@@ -71,6 +85,11 @@ export default class Studies extends React.Component {
 
                     .details {
                         margin-top: 10px;
+                    }
+
+                    .skills {
+                      color: #777;
+                      font-style: italic;
                     }
 
 
