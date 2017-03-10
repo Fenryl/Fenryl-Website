@@ -1,34 +1,35 @@
 {
+  "private": true,
   "name": "fenryl-website",
-  "version": "0.0.1",
-  "description": "my personal website",
-  "main": "index.js",
+  "author": "Bastien Cailhol",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "NODE_ENV=production next start",
+    "lint": "standard",
+    "format": "standard --fix",
+    "precommit": "lint-staged"
+  },
   "dependencies": {
     "next": "^2.0.0-beta.27",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "babel-eslint": "7.0.0",
-    "standard": "8.4.0"
+    "babel-eslint": "^7.0.0",
+    "husky": "^0.13.2",
+    "lint-staged": "^3.3.1",
+    "pre-commit": "^1.2.2",
+    "standard": "^9.0.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
   },
   "standard": {
     "parser": "babel-eslint"
-  },
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "NODE_ENV=production next start",
-    "lint": "standard"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Fenryl/Fenryl-Website.git"
-  },
-  "author": "Bastien Cailhol",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Fenryl/Fenryl-Website/issues"
-  },
-  "homepage": "https://github.com/Fenryl/Fenryl-Website#readme"
+  }
 }
