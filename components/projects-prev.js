@@ -9,7 +9,7 @@ export default class ProjectsPreview extends React.Component {
     render() {
         return (
                 <div className="projects col12">
-                    <h4 className="title h5-like">Derniers projects Web</h4>
+                    <h4 className="title h5-like">Derniers projets Web</h4>
                     <div className="projectList">
                         <div className="project">
                             <ProjectThumbnail

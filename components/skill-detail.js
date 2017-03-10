@@ -5,10 +5,12 @@ export default class SkillDetail extends React.Component {
 
 
     render() {
-        const {title, description, icon} = this.props;
+        const {title, description, img} = this.props;
         return (
             <div className="skill col12">
-                <div className="icon col4">{icon}</div>
+                <div className="icon col4">
+                    <img src={`/static/skills/blurred/${img}.png`} alt={title}/>
+                </div>
                 <div className="info col8">
                     <h3 className="title">{title}</h3>
                     {description}
@@ -17,11 +19,10 @@ export default class SkillDetail extends React.Component {
                 <style jsx>{`
                     .skill {
                         display: flex;
-                        padding: 20px;
+                        padding: 20px 0;
                     }
                     .icon {
                         display: flex;
-                        height: 8em;
                         align-items: center;
                         justify-content: center;
                         color: black;

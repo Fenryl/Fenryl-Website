@@ -19,7 +19,8 @@ export default class Skills extends React.Component {
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
-                     icon:
+                    img: "javascript",
+                    icon:
                         <Icon path={`M3,3H21V21H3V3M7.73,18.04C8.13,18.89 8.92,19.59 10.27,19.59C11.77,19.59 12.8,18.79 
                         12.8,17.04V11.26H11.1V17C11.1,17.86 10.75,18.08 10.2,18.08C9.62,18.08 9.38,17.68 9.11,17.21L7.73,18.04M13.71,17.86C14.21,18.84 
                         15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 
@@ -36,7 +37,8 @@ export default class Skills extends React.Component {
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
-                     icon:
+                    img: "html_css",
+                    icon:
                         <div><Icon path={`M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L
                             9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z `} 
                             size="8em"/>
@@ -54,7 +56,8 @@ export default class Skills extends React.Component {
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
-                     icon:
+                    img: "php",
+                    icon:
                         <Icon path={`M12,18.08C5.37,18.08 0,15.36 0,12C0,8.64 5.37,5.92 12,5.92C18.63,5.92 24,8.64 24,12C24,15.36 18.63,18.08 
                         12,18.08M6.81,10.13C7.35,10.13 7.72,10.23 7.9,10.44C8.08,10.64 8.12,11 8.03,11.47C7.93,12 7.74,12.34 
                         7.45,12.56C7.17,12.78 6.74,12.89 6.16,12.89H5.29L5.82,10.13H6.81M3.31,15.68H4.75L5.09,13.93H6.32C6.86,13.93 7.3,13.87 
@@ -75,7 +78,8 @@ export default class Skills extends React.Component {
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
-                     icon:
+                    img: "mysql",
+                    icon:
                         <Icon path={`M2.001 90.458h4.108v-16.223l6.36 14.143c.75 1.712 1.777 2.317 3.792 2.317s3.003-.605 3.753-2.317l6.36
                         -14.143v16.223h4.108v-16.196c0-1.58-.632-2.345-1.936-2.739-3.121-.974-5.215-.131-6.163 1.976l-6.241 13.958-6.043-13.959c
                         -.909-2.106-3.042-2.949-6.163-1.976-1.304.395-1.936 1.159-1.936 2.739v16.197zM33.899 77.252h4.107v8.938c-.038.485.156 
@@ -124,7 +128,8 @@ export default class Skills extends React.Component {
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
-                     icon:
+                    img: "graphisme",
+                    icon:
                         <Icon path={`M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 
                         0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 
                         9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 
@@ -140,6 +145,7 @@ export default class Skills extends React.Component {
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
+                    img: "animation",
                     icon:
                         <Icon path={`M22.248,14.131l-3.645,1.094v-1.438c0-1.319-1.079-2.396-2.397-2.396H6.622c-1.318,0-2.396,1.077-2.396,2.396
                         v7.188c0,1.319,1.078,2.397,2.396,2.397h9.584c1.318,0,2.397-1.078,2.397-2.397v-1.438l3.645,1.095
@@ -174,7 +180,7 @@ export default class Skills extends React.Component {
                     <SkillDetail
                         title={this.state.currentSkill.title}
                         description={this.state.currentSkill.description}
-                        icon={this.state.currentSkill.icon}
+                        img={this.state.currentSkill.img}
                     />
                     <div className="skillMenu" onChange={this.setSkill}>
                         {skillList.map((data, i) => (

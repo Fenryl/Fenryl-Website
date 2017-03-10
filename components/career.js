@@ -52,16 +52,6 @@ export default class Studies extends React.Component {
                                 sur le thème de la cuisine. Les blogs culinaires représentent une part importante 
                                 des hébergements sur la plateforme, mais aucun thème dédié n’avait encore été créé.</p>}
                         />
-                        <CareerLine
-                            title="Titre professionnel de Développeur web et logiciel"
-                            place="ADRAR Digit@l Academy"
-                            date="2016 - 2017"
-                            city="Ramonville"
-                            details= {<p className="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                            nisi ut aliquip ex ea commodo consequat.</p>}
-                        />
                     </div>
                 </div>
                 <style jsx>{`
