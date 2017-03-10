@@ -9,6 +9,7 @@ export default ({ children, title = 'This is the default title' }) => (
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <link rel='stylesheet' href='/static/styles.css' />
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700" rel="stylesheet" />
     </Head>
     <div className='content'>{children}</div>
     <style jsx>{`

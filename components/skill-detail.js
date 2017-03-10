@@ -6,7 +6,7 @@ export default class SkillDetail extends React.Component {
     return (
       <div className='skill col12'>
         <div className='icon col4'>
-          <img src={`/static/skills/blurred/${img}.png`} alt={title} />
+          <img src={`/static/skills/${img}.png`} alt={title} />
         </div>
         <div className='info col8'>
           <h3 className='title'>{title}</h3>
