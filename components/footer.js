@@ -5,18 +5,18 @@ import Link from 'next/link'
 import Icon from './icon'
 
 export default () => (
-    <div className="footer">
-        <p>Copyright © 2012 | Bastien Cailhol</p>
-        <nav className="menu">
-            <ul>
-                <li><Link prefetch href='/index'><a>Home</a></Link></li>
-                <li><Link prefetch href='/dev'><a>Dev</a></Link></li>
-                <li><Link prefetch href='/2d'><a>2D</a></Link></li>
-                <li><Link prefetch href='/3d'><a>3D</a></Link></li>
-                <li><Link prefetch href='/contact'><a>Contact</a></Link></li>
-            </ul>
-        </nav>
-        <style jsx>{`
+  <div className='footer'>
+    <p>Copyright © 2012 | Bastien Cailhol</p>
+    <nav className='menu'>
+      <ul>
+        <li><Link prefetch href='/index'><a>Home</a></Link></li>
+        <li><Link prefetch href='/dev'><a>Dev</a></Link></li>
+        <li><Link prefetch href='/2d'><a>2D</a></Link></li>
+        <li><Link prefetch href='/3d'><a>3D</a></Link></li>
+        <li><Link prefetch href='/contact'><a>Contact</a></Link></li>
+      </ul>
+    </nav>
+    <style jsx>{`
             .footer {
                 display: flex;
                 padding: 0 10px;
@@ -48,5 +48,5 @@ export default () => (
                 transition: all .1s ease-out;
             }
         `}</style>
-    </div>
+  </div>
 )

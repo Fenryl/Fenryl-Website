@@ -3,62 +3,60 @@ import React from 'react'
 import Icon from './icon'
 import SkillDetail from './skill-detail'
 
-
 export default class Skills extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.setSkill = this.setSkill.bind(this);
-        this.state = {
-            skills: [
-                {
-                    name: "JavaScript",
-                    description:
-                        <p>
+  constructor (props) {
+    super(props)
+    this.setSkill = this.setSkill.bind(this)
+    this.state = {
+      skills: [
+        {
+          name: 'JavaScript',
+          description:
+  <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
-                    img: "javascript",
-                    icon:
-                        <Icon path={`M3,3H21V21H3V3M7.73,18.04C8.13,18.89 8.92,19.59 10.27,19.59C11.77,19.59 12.8,18.79 
+          img: 'javascript',
+          icon:
+  <Icon path={`M3,3H21V21H3V3M7.73,18.04C8.13,18.89 8.92,19.59 10.27,19.59C11.77,19.59 12.8,18.79 
                         12.8,17.04V11.26H11.1V17C11.1,17.86 10.75,18.08 10.2,18.08C9.62,18.08 9.38,17.68 9.11,17.21L7.73,18.04M13.71,17.86C14.21,18.84 
                         15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 
                         15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 
                         16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 
-                        17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86Z`} 
-                        size="8em"/>
-                },
-                {
-                    name: "HTML/CSS",
-                    description:
-                        <p>
+                        17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86Z`}
+    size='8em' />
+        },
+        {
+          name: 'HTML/CSS',
+          description:
+  <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
-                    img: "html_css",
-                    icon:
-                        <div><Icon path={`M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L
-                            9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z `} 
-                            size="8em"/>
-                            <Icon path={`M8.76 1l10.055 112.883 45.118 12.58 45.244-12.626 10.063-112.837h-110.48zm89.591 25.862l-3.347 
+          img: 'html_css',
+          icon:
+  <div><Icon path={`M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L
+                            9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z `}
+    size='8em' />
+    <Icon path={`M8.76 1l10.055 112.883 45.118 12.58 45.244-12.626 10.063-112.837h-110.48zm89.591 25.862l-3.347 
                             37.605.01.203-.014.467v-.004l-2.378 26.294-.262 2.336-28.36 7.844v.001l-.022.019-28.311-7.888-1.917-21.739h13.883l.985 
                             11.054 15.386 4.17-.004.008v-.002l15.443-4.229 1.632-18.001h-32.282999999999994l-.277-3.043-.631-7.129-.331-3.828h
-                            34.748999999999995l1.264-14h-52.926l-.277-3.041-.63-7.131-.332-3.828h69.281l-.331 3.862z`} 
-                            viewBox="128" size="6em"/></div>
-                },
-                {
-                    name: "PHP",
-                    description:
-                        <p>
+                            34.748999999999995l1.264-14h-52.926l-.277-3.041-.63-7.131-.332-3.828h69.281l-.331 3.862z`}
+      viewBox='128' size='6em' /></div>
+        },
+        {
+          name: 'PHP',
+          description:
+  <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
-                    img: "php",
-                    icon:
-                        <Icon path={`M12,18.08C5.37,18.08 0,15.36 0,12C0,8.64 5.37,5.92 12,5.92C18.63,5.92 24,8.64 24,12C24,15.36 18.63,18.08 
+          img: 'php',
+          icon:
+  <Icon path={`M12,18.08C5.37,18.08 0,15.36 0,12C0,8.64 5.37,5.92 12,5.92C18.63,5.92 24,8.64 24,12C24,15.36 18.63,18.08 
                         12,18.08M6.81,10.13C7.35,10.13 7.72,10.23 7.9,10.44C8.08,10.64 8.12,11 8.03,11.47C7.93,12 7.74,12.34 
                         7.45,12.56C7.17,12.78 6.74,12.89 6.16,12.89H5.29L5.82,10.13H6.81M3.31,15.68H4.75L5.09,13.93H6.32C6.86,13.93 7.3,13.87 
                         7.65,13.76C8,13.64 8.32,13.45 8.61,13.18C8.85,12.96 9.04,12.72 9.19,12.45C9.34,12.19 9.45,11.89 9.5,11.57C9.66,10.79 
@@ -67,20 +65,20 @@ export default class Skills extends React.Component {
                         14.56,9.5C14.26,9.23 13.71,9.1 12.91,9.1H11.64L12,7.35H10.56M18,10.13C18.55,10.13 18.91,10.23 19.09,10.44C19.27,10.64 
                         19.31,11 19.22,11.47C19.12,12 18.93,12.34 18.65,12.56C18.36,12.78 17.93,12.89 17.35,12.89H16.5L17,10.13H18M14.5,15.68H
                         15.94L16.28,13.93H17.5C18.05,13.93 18.5,13.87 18.85,13.76C19.2,13.64 19.5,13.45 19.8,13.18C20.04,12.96 20.24,12.72 
-                        20.38,12.45C20.53,12.19 20.64,11.89 20.7,11.57C20.85,10.79 20.74,10.18 20.36,9.75C20,9.31 19.37,9.1 18.54,9.1H15.79L14.5,15.68Z`} 
-                        size="8em"/>
-                },
-                {
-                    name: "MySQL",
-                    description:
-                        <p>
+                        20.38,12.45C20.53,12.19 20.64,11.89 20.7,11.57C20.85,10.79 20.74,10.18 20.36,9.75C20,9.31 19.37,9.1 18.54,9.1H15.79L14.5,15.68Z`}
+    size='8em' />
+        },
+        {
+          name: 'MySQL',
+          description:
+  <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
-                    img: "mysql",
-                    icon:
-                        <Icon path={`M2.001 90.458h4.108v-16.223l6.36 14.143c.75 1.712 1.777 2.317 3.792 2.317s3.003-.605 3.753-2.317l6.36
+          img: 'mysql',
+          icon:
+  <Icon path={`M2.001 90.458h4.108v-16.223l6.36 14.143c.75 1.712 1.777 2.317 3.792 2.317s3.003-.605 3.753-2.317l6.36
                         -14.143v16.223h4.108v-16.196c0-1.58-.632-2.345-1.936-2.739-3.121-.974-5.215-.131-6.163 1.976l-6.241 13.958-6.043-13.959c
                         -.909-2.106-3.042-2.949-6.163-1.976-1.304.395-1.936 1.159-1.936 2.739v16.197zM33.899 77.252h4.107v8.938c-.038.485.156 
                         1.625 2.406 1.661 1.148.018 8.862 0 8.934 0v-10.643h4.117c.019 0-.004 14.514-.004 14.574.022 3.58-4.441 4.357-6.499 
@@ -117,83 +115,81 @@ export default class Skills extends React.Component {
                         6.334 9.838 10.772.372.715.534 1.396.861 2.154.662 1.528 1.496 3.101 2.154 4.596.657 1.491 1.298 2.996 2.227 4.237.488.652 
                         2.374 1.002 3.231 1.364.601.254 1.585.519 2.154.861 1.087.656 2.141 1.437 3.16 2.155.509.362 2.076 1.149 2.154 
                         1.798zM90.237 39.593c-.526-.01-.899.058-1.293.144v.071h.072c.251.517.694.849 1.005 1.293l.719 1.508.071-.071c.445-.313.648
-                        -.814.646-1.58-.179-.188-.205-.423-.359-.646-.204-.3-.602-.468-.861-.719z`} 
-                        viewBox="128" size="9em"/>
-                },
-                {
-                    name: "Graphisme",
-                    description:
-                        <p>
+                        -.814.646-1.58-.179-.188-.205-.423-.359-.646-.204-.3-.602-.468-.861-.719z`}
+    viewBox='128' size='9em' />
+        },
+        {
+          name: 'Graphisme',
+          description:
+  <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
-                    img: "graphisme",
-                    icon:
-                        <Icon path={`M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 
+          img: 'graphisme',
+          icon:
+  <Icon path={`M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 
                         0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 
                         9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 
                         0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 
-                        12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z`} 
-                        size="8em"/>
-                },
-                {
-                    name: "Animation 2D/3D",
-                    description:
-                        <p>
+                        12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z`}
+    size='8em' />
+        },
+        {
+          name: 'Animation 2D/3D',
+          description:
+  <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>,
-                    img: "animation",
-                    icon:
-                        <Icon path={`M22.248,14.131l-3.645,1.094v-1.438c0-1.319-1.079-2.396-2.397-2.396H6.622c-1.318,0-2.396,1.077-2.396,2.396
+          img: 'animation',
+          icon:
+  <Icon path={`M22.248,14.131l-3.645,1.094v-1.438c0-1.319-1.079-2.396-2.397-2.396H6.622c-1.318,0-2.396,1.077-2.396,2.396
                         v7.188c0,1.319,1.078,2.397,2.396,2.397h9.584c1.318,0,2.397-1.078,2.397-2.397v-1.438l3.645,1.095
                         c0.63,0.188,1.148-0.195,1.148-0.855v-4.792C23.396,14.326,22.878,13.943,22.248,14.131z M5.423,0.607
                         c2.647,0,4.792,2.146,4.792,4.793s-2.146,4.792-4.792,4.792S0.63,8.047,0.63,5.4S2.776,0.607,5.423,0.607z M16.206,0.607
-                        C18.854,0.607,21,2.753,21,5.4s-2.146,4.792-4.794,4.792c-2.646,0-4.792-2.146-4.792-4.792S13.56,0.607,16.206,0.607z`} 
-                        size="6em"/>
-                }
-            ],
-            currentSkill: "",
-            selectedSkill: ""
+                        C18.854,0.607,21,2.753,21,5.4s-2.146,4.792-4.794,4.792c-2.646,0-4.792-2.146-4.792-4.792S13.56,0.607,16.206,0.607z`}
+    size='6em' />
         }
+      ],
+      currentSkill: '',
+      selectedSkill: ''
     }
+  }
 
-    setSkill(event) {
-        this.setState({ currentSkill: this.state.skills[event.target.value], selectedSkill: [event.target.value] });
-    }
+  setSkill (event) {
+    this.setState({ currentSkill: this.state.skills[event.target.value], selectedSkill: [event.target.value] })
+  }
 
-    componentWillMount() {
-        this.setState({ currentSkill: this.state.skills[0], selectedSkill: [0] });
-    }
+  componentWillMount () {
+    this.setState({ currentSkill: this.state.skills[0], selectedSkill: [0] })
+  }
 
+  render () {
+    let skillList = this.state.skills
 
-    render() {
-        let skillList = this.state.skills;
-
-
-        return (
-            <div className="skills">
-                <div className="container col12">
-                    <h4 className="title h5-like">Compétences</h4>
-                    <SkillDetail
-                        title={this.state.currentSkill.title}
-                        description={this.state.currentSkill.description}
-                        img={this.state.currentSkill.img}
+    return (
+      <div className='skills'>
+        <div className='container col12'>
+          <h4 className='title h5-like'>Compétences</h4>
+          <SkillDetail
+            title={this.state.currentSkill.title}
+            description={this.state.currentSkill.description}
+            img={this.state.currentSkill.img}
                     />
-                    <div className="skillMenu" onChange={this.setSkill}>
-                        {skillList.map((data, i) => (
-                            <label className={this.state.selectedSkill == i ? "checked menuItem" : "menuItem"} key={`label_${i}`}>
-                                <input defaultChecked={i === 0} type="radio" name="skill" value={i}
-                                       key={`label_${i}`}/>{data.name}
-                            </label>
+          <div className='skillMenu' onChange={this.setSkill}>
+            {skillList.map((data, i) => (
+              <label className={this.state.selectedSkill == i ? 'checked menuItem' : 'menuItem'} key={`label_${i}`}>
+                <input defaultChecked={i === 0} type='radio' name='skill' value={i}
+                  key={`label_${i}`} />{data.name}
+              </label>
                         ))
                         }
-                    </div>
-                </div>
+          </div>
+        </div>
 
-                <style jsx>{`
+        <style jsx>{`
                     .skills {
                         padding: 20px 0;
                         background-color: #f6f6f6;
@@ -244,7 +240,7 @@ export default class Skills extends React.Component {
                         color: white;
                     }
                 `}</style>
-            </div>
-        )
-    }
+      </div>
+    )
+  }
 }

@@ -7,54 +7,54 @@ import Footer from '../components/footer'
 import Modal from '../components/modal'
 
 export default class extends React.Component {
-  static getInitialProps() {
+  static getInitialProps () {
     return {
       photos: [
-        {name: "bobby.jpg", type: "illu"},
-        {name: "appart.jpg", type: "dessin"},
-        {name: "danseuse.jpg", type: "illu"},
-        {name: "candy_hero.png", type: "pixel"},
+        {name: 'bobby.jpg', type: 'illu'},
+        {name: 'appart.jpg', type: 'dessin'},
+        {name: 'danseuse.jpg', type: 'illu'},
+        {name: 'candy_hero.png', type: 'pixel'}
       ]
     }
   }
 
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.onKeyDown = this.onKeyDown.bind(this)
   }
 
   // handling escape close
-  componentDidMount() {
+  componentDidMount () {
     document.addEventListener('keydown', this.onKeyDown)
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     document.removeEventListener('keydown', this.onKeyDown)
   }
 
-  onKeyDown(e) {
+  onKeyDown (e) {
     if (!this.props.url.query.photoId) return
     if (e.keyCode === 27) {
       this.props.url.back()
     }
   }
 
-  dismissModal() {
+  dismissModal () {
     Router.push('/2d')
   }
 
-  showPhoto(e, id) {
+  showPhoto (e, id) {
     e.preventDefault()
     Router.push(`/2d/?photoId=${id}`, `2d/photo?id=${id}`)
   }
 
-  render() {
+  render () {
     const { url, photos } = this.props
-    console.log(photos);
+    console.log(photos)
 
     return (
-      <Layout title="2D">
-        <Header focus="2d"/>
+      <Layout title='2D'>
+        <Header focus='2d' />
         <div className='list pageContent'>
           {
             url.query.photoId &&

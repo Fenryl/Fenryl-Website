@@ -10,13 +10,13 @@ const Icon = ({
     path,
     ...props
 }) => (
-    <svg {...props}
-        width={width || size}
-        height={height || size}
-        fill={fill}
-        viewBox={`0 0 ${viewBox} ${viewBox}`}>
-        <path d={path} />
-    </svg>
+  <svg {...props}
+    width={width || size}
+    height={height || size}
+    fill={fill}
+    viewBox={`0 0 ${viewBox} ${viewBox}`}>
+    <path d={path} />
+  </svg>
 )
 
 export default Icon

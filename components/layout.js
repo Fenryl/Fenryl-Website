@@ -1,16 +1,16 @@
 import React from 'react'
-import Head from "next/head"
-import Footer from "./footer"
+import Head from 'next/head'
+import Footer from './footer'
 
 export default ({ children, title = 'This is the default title' }) => (
-  <div className="layout">
+  <div className='layout'>
     <Head>
       <title>{ title }</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      <link rel="stylesheet" href="/static/styles.css"/>
+      <link rel='stylesheet' href='/static/styles.css' />
     </Head>
-    <div className="content">{children}</div>
+    <div className='content'>{children}</div>
     <style jsx>{`
       .content {
         display: flex;

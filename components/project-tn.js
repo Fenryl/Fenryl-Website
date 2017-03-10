@@ -3,17 +3,17 @@ import React from 'react'
 import Link from 'next/link'
 
 export default ({ title, image, description, path }) => (
-    <Link href={`/dev/${path}`} className="link">
-        <div className="project-tn">
-            <div className="image">
-                <img src={`/static/projects/${image}`} alt={`${title} thumbnail`} />
-            </div>
-            <div className="info">
-                <h4 className="header">{title}</h4>
-                <p className="description">{description}</p>
-            </div>
+  <Link href={`/dev/${path}`} className='link'>
+    <div className='project-tn'>
+      <div className='image'>
+        <img src={`/static/projects/${image}`} alt={`${title} thumbnail`} />
+      </div>
+      <div className='info'>
+        <h4 className='header'>{title}</h4>
+        <p className='description'>{description}</p>
+      </div>
 
-            <style jsx>{`
+      <style jsx>{`
             .project-tn {
                 width: 225px;
                 background: #f6f6f6;
@@ -50,6 +50,6 @@ export default ({ title, image, description, path }) => (
                 transition: all .1s ease-out;
             }
             `}</style>
-        </div>
-    </Link>
+    </div>
+  </Link>
 )

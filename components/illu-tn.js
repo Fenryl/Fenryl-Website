@@ -3,14 +3,14 @@ import React from 'react'
 import Link from 'next/link'
 
 export default ({image, description, path}) => (
-    <Link href={`/dev/${path}`} className="link">
-        <div className="illu-tn">
-            <img src={`/static/illustrations/${image}`} alt={image}/>
-            <div className="info">
-                <p className="description">{description}</p>
-            </div>
+  <Link href={`/dev/${path}`} className='link'>
+    <div className='illu-tn'>
+      <img src={`/static/illustrations/${image}`} alt={image} />
+      <div className='info'>
+        <p className='description'>{description}</p>
+      </div>
 
-            <style jsx>{`
+      <style jsx>{`
 
                 .illu-tn {
                     position: relative;
@@ -53,6 +53,6 @@ export default ({image, description, path}) => (
                     object-fit: cover;
                 }
             `}</style>
-        </div>
-    </Link>
+    </div>
+  </Link>
 )

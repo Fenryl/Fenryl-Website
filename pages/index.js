@@ -13,18 +13,15 @@ import Illustrations from '../components/illu-prev'
 import Contact from '../components/contact'
 
 export default class extends React.Component {
-
-  constructor(props) {
+  constructor (props) {
     super(props)
   }
 
-
-  render() {
-
+  render () {
     return (
-      <Layout title="Bastien Cailhol - Bienvenue">
-        <Header focus="home" />
-        <div className="index pageContent">
+      <Layout title='Bastien Cailhol - Bienvenue'>
+        <Header focus='home' />
+        <div className='index pageContent'>
           <Banner />
           <Career />
           <Skills />
