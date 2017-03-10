@@ -251,3 +251,14 @@ body > script {display: none !important;}
 .col16 {
     width: 1280px;
 }
+
+
+
+p a.link {
+    color: #0090d1;
+    text-decoration: none;
+    border-bottom: 2px solid #c8d9e1;
+}
+p a.link:hover {
+    border-bottom: 1px solid #00a1ea;
+}

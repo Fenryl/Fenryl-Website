@@ -10,7 +10,7 @@ export default class SkillDetail extends React.Component {
         </div>
         <div className='info col8'>
           <h3 className='title'>{name}</h3>
-          {description}
+          <div className="description">{description}</div>
         </div>
 
         <style jsx>{`
@@ -31,6 +31,11 @@ export default class SkillDetail extends React.Component {
 
                     .title {
                         font-size: 2em;
+                        line-height: 1em;
+                    }
+
+                    .description {
+                        margin-top: 10px;
                     }
 
                 `}</style>

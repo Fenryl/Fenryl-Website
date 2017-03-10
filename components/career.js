@@ -52,7 +52,7 @@ export default class Studies extends React.Component {
                     <p className="skills">Webdesign</p>
                   </li>
                 </ul>}
-                        />
+            />
             <CareerLine
               title='Stagiaire développeur front-end'
               place='Overblog'
@@ -64,7 +64,36 @@ export default class Studies extends React.Component {
                   <p className="skills">Web design, HTML, CSS, Twig, jQuery</p>
                 </div>
               }
-                        />
+            />
+            <CareerLine
+              title='Freelance Infographiste 2D/3D'
+              place=''
+              date='2013 - 2015'
+              city='Toulouse'
+              details={
+                <ul>
+                  <li className='details'>
+                    <p>Co-réalisation avec M Prod' de vidéos en motion design pour :</p>
+                    <ul>
+                      <li>
+                        <p>- Trade School Toulouse</p>
+                      </li>
+                      <li>
+                        <p>- Citiz Toulouse</p>
+                      </li>
+                    </ul>
+                    <p className="skills">Écriture, Storyboard</p>
+                  </li>
+                  <li className='details'>
+                    <p>Création des supports de communication pour le centre de bien-être Terra Zen.</p>
+                    <p className="skills">Logo, Site web, Print</p>
+                  </li>
+                  <li className='details'>
+                    <p>Développement d'une application mobile en 3D temps-réel.</p>
+                    <p className="skills">Modélisation, Shading, Texturing, Rigging, Animation</p>
+                  </li>
+                </ul>}
+            />
           </div>
         </div>
         <style jsx>{`
