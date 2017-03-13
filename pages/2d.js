@@ -53,7 +53,7 @@ export default class extends React.Component {
     console.log(photos)
 
     return (
-      <Layout title='2D'>
+      <Layout title='Bastien Cailhol : 2D'>
         <Header focus='2d' />
         <div className='list pageContent'>
           {

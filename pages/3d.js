@@ -7,19 +7,19 @@ export default class extends React.Component {
 
   render () {
     return (
-      <Layout title='Bastien Cailhol : Développement'>
-        <Header focus='dev' />
+      <Layout title='Bastien Cailhol : 3D'>
+        <Header focus='3d' />
         <div className="pageContent">
             <Error />
         </div>
         <Footer />
         <style jsx>{`
-            .pageContent {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            } 
+                .pageContent {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                } 
         `}</style>
       </Layout>
     )

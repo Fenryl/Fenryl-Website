@@ -26,10 +26,10 @@ export default class Skills extends React.Component {
                             </p>
                             <p>
                                 J'ai approfondi mes connaissances en langage objet lors de mon stage chez Yestudent, où j'ai 
-                                créé des composants web avec React et Redux.
+                                créé des composants web avec React/Redux et avec AngularJS.
                             </p>
                             <p>
-                                J'ai également choisi la technologue React pour réaliser ce site web, avec le framework NextJS.
+                                J'ai également choisi la technologie React (boostée avec le framework NextJS) pour réaliser ce site.
                             </p>
                         </div>,
           img: 'javascript'

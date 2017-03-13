@@ -255,10 +255,11 @@ body > script {display: none !important;}
 
 
 p a.link {
-    color: #0090d1;
+    color: #d92020;
     text-decoration: none;
-    border-bottom: 2px solid #c8d9e1;
+    transition: all .2s ease-out;
+    border-bottom-color: rgba(217, 32, 32, 0);
 }
 p a.link:hover {
-    border-bottom: 1px solid #00a1ea;
+    border-bottom: 1px solid #d92020;
 }

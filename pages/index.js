@@ -19,7 +19,7 @@ export default class extends React.Component {
 
   render () {
     return (
-      <Layout title='Bastien Cailhol - Bienvenue'>
+      <Layout title='Bastien Cailhol : Bienvenue'>
         <Header focus='home' />
         <div className='index pageContent'>
           <Banner />
