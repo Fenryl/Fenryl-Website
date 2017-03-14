@@ -60,7 +60,7 @@ export default class Studies extends React.Component {
               city='Toulouse'
               details={
                 <div className='details'>
-                  <p>Développement d'un thème de blog personnalisable, responsive et multi-plateformes.</p>
+                  <p>Développement d'un thème de blog personnalisable, adaptatif et multi-plateformes.</p>
                   <p className="skills">Web design, HTML, CSS, Twig, jQuery</p>
                 </div>
               }
