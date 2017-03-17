@@ -6,29 +6,6 @@ export default class Studies extends React.Component {
   render () {
     return (
       <div className='career'>
-        <div className='studies col12'>
-          <h4 className='title h5-like col2'>Formations</h4>
-          <div className='careerLines'>
-            <CareerLine
-              title='Titre professionnel de développeur web et logiciel'
-              place='ADRAR Digit@l Academy'
-              date='2016 - 2017'
-              city='Ramonville'
-                        />
-            <CareerLine
-              title='Certificat de praticien en massage bien-être, agrégé FFMBE'
-              place="Institut Français des Sciences de l'Homme (IFSH)"
-              date='2013 - 2014'
-              city='Toulouse'
-                        />
-            <CareerLine
-              title="Titre professionnel d'assistant réalisateur"
-              place="École des Métiers du Cinéma d'Animation (EMCA)"
-              date='2009 - 2012'
-              city='Angoulême'
-                        />
-          </div>
-        </div>
         <div className='experiences col12'>
           <h4 className='title h5-like col2'>Expériences</h4>
           <div className='careerLines'>
@@ -94,6 +71,29 @@ export default class Studies extends React.Component {
                   </li>
                 </ul>}
             />
+          </div>
+        </div>
+        <div className='studies col12'>
+          <h4 className='title h5-like col2'>Formations</h4>
+          <div className='careerLines'>
+            <CareerLine
+              title='Titre professionnel de développeur web et logiciel'
+              place='ADRAR Digit@l Academy'
+              date='2016 - 2017'
+              city='Ramonville'
+                        />
+            <CareerLine
+              title='Certificat de praticien en massage bien-être, agrégé FFMBE'
+              place="Institut Français des Sciences de l'Homme (IFSH)"
+              date='2013 - 2014'
+              city='Toulouse'
+                        />
+            <CareerLine
+              title="Titre professionnel d'assistant réalisateur"
+              place="École des Métiers du Cinéma d'Animation (EMCA)"
+              date='2009 - 2012'
+              city='Angoulême'
+                        />
           </div>
         </div>
         <style jsx>{`

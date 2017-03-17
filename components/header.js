@@ -66,7 +66,7 @@ export default class Header extends React.Component {
                 <span className='menuText'>3D</span>
               </a>
             </Link></li>
-            <li className='menuItem'><Link>
+            <li className='menuItem'>
               <a href='/index#contact'>
                 <span className='icon'>
                   <Icon path={`M23.55 12.2c0 .55-.13 1.25-.22 1.63-.25.98-.72 1.83-1.4 2.6-.74.84-1.66 1.44-2.74 1.8-.7.23-1.4.32-2.13.32h-9.9c
@@ -80,8 +80,7 @@ export default class Header extends React.Component {
                     size='1em' />
                 </span>
                 <span className='menuText'>Contact</span>
-              </a>
-            </Link></li>
+              </a></li>
           </ul>
         </nav>
         <div className='offset' />

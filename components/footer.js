@@ -13,7 +13,7 @@ export default () => (
         <li><Link prefetch href='/dev'><a>Dev</a></Link></li>
         <li><Link prefetch href='/2d'><a>2D</a></Link></li>
         <li><Link prefetch href='/3d'><a>3D</a></Link></li>
-        <li><Link prefetch href='/contact'><a>Contact</a></Link></li>
+        <li><a href='/index#contact'>Contact</a></li>
       </ul>
     </nav>
     <style jsx>{`
