@@ -186,7 +186,7 @@ div, textarea, table, td, th, code, pre, samp {
 /* pictures */
 img {
     width: auto;
-    height: auto;
+    /*height: auto;*/
     vertical-align: middle;
 }
 a img { border: 0; }
@@ -253,6 +253,7 @@ body > script {display: none !important;}
 }
 
 
+/* ----------- SKILLS ----------*/
 
 p a.link {
     color: #d92020;
@@ -263,3 +264,19 @@ p a.link {
 p a.link:hover {
     border-bottom: 1px solid #d92020;
 }
+
+
+/* ----------- IMAGE PREVIEWS ----------*/
+
+.img_tn {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .1s ease-in-out;
+}
+
+.img_tn:hover {
+    transform: scale(1.05);
+}
+
+

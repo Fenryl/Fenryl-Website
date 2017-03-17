@@ -5,7 +5,7 @@ import LazyImg from "./lazy-img";
 export default ({ image, description, path }) => (
   <Link href={`/dev/${path}`} className="link">
     <div className="illu-tn">
-      <LazyImg src={`/static/illustrations/LD/${image}`} alt={image} />
+      <LazyImg src={`/static/illustrations/LD/${image}`} alt={image} height="230px"  className="img_tn" />
       <div className="info">
         <p className="description">{description}</p>
       </div>
