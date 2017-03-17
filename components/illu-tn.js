@@ -1,11 +1,11 @@
 import React from 'react'
-
 import Link from 'next/link'
+import LazyImg from './lazy-img'
 
 export default ({image, description, path}) => (
   <Link href={`/dev/${path}`} className='link'>
     <div className='illu-tn'>
-      <img src={`/static/illustrations/${image}`} alt={image} />
+      <LazyImg src={`/static/illustrations/${image}`} alt={image} />
       <div className='info'>
         <p className='description'>{description}</p>
       </div>
