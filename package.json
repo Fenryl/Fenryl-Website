@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "fenryl-website",
+  "name": "bastien-cailhol",
   "author": "Bastien Cailhol",
   "license": "ISC",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "NODE_ENV=production next start",
     "lint": "standard",
-    "format": "standard --fix",
+    "format": "prettier --write components/*.js pages/*.js",
     "precommit": "lint-staged"
   },
   "dependencies": {
@@ -22,11 +22,11 @@
     "husky": "^0.13.2",
     "lint-staged": "^3.3.1",
     "pre-commit": "^1.2.2",
-    "standard": "^9.0.1"
+    "prettier": "^0.22.0"
   },
   "lint-staged": {
     "*.js": [
-      "standard --fix",
+      "prettier --write",
       "git add"
     ]
   },
