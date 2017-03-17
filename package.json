@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production next start",
+    "start": "cross-env NODE_ENV=production next start",
     "lint": "standard",
     "format": "prettier --write components/*.js pages/*.js",
     "precommit": "lint-staged"
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.0.0",
+    "cross-env": "^3.2.4",
     "husky": "^0.13.2",
     "lint-staged": "^3.3.1",
     "pre-commit": "^1.2.2",
