@@ -191,7 +191,7 @@ export default class Skills extends React.Component {
     return (
       <div className="skills">
         <div className="container col12">
-          <h4>Compétences</h4>
+          <h4 className="title h5-like">Compétences</h4>
           <SkillDetail
             name={currentSkill.name}
             description={currentSkill.description}
