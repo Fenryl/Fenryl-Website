@@ -1,73 +1,68 @@
-import React from 'react'
-import debounce from 'lodash/debounce'
+import React from "react";
+import debounce from "lodash/debounce";
 
-const inBrower = typeof window !== 'undefined'
+const inBrower = typeof window !== "undefined";
 
 export default class LazyImg extends React.Component {
-  static prefetch (uri) {
-    const image = new window.Image()
-    image.src = uri
+  static prefetch(uri) {
+    const image = new window.Image();
+    image.src = uri;
   }
 
-  constructor () {
-    super()
+  constructor() {
+    super();
 
     this.state = {
       visible: false
-    }
+    };
 
-    this.element = null
-    this.elementRef = (el) => {
-      this.element = el
-    }
+    this.element = null;
+    this.elementRef = el => {
+      this.element = el;
+    };
 
-    this.handleViewportChange = debounce(this.checkVisibility.bind(this), 100)
+    this.handleViewportChange = debounce(this.checkVisibility.bind(this), 100);
   }
 
-  componentDidMount () {
+  componentDidMount() {
     if (inBrower) {
-      window.addEventListener('resize', this.handleViewportChange)
-      window.addEventListener('scroll', this.handleViewportChange)
+      window.addEventListener("resize", this.handleViewportChange);
+      window.addEventListener("scroll", this.handleViewportChange);
       if (this.element) {
-        this.checkVisibility()
+        this.checkVisibility();
       }
     }
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     if (inBrower) {
-      window.removeEventListener('resize', this.handleViewportChange)
-      window.removeEventListener('scroll', this.handleViewportChange)
+      window.removeEventListener("resize", this.handleViewportChange);
+      window.removeEventListener("scroll", this.handleViewportChange);
     }
   }
 
-  checkVisibility () {
-    const rect = this.element.getBoundingClientRect()
-    const inViewport = (
-      rect.top >= 0 &&
+  checkVisibility() {
+    const rect = this.element.getBoundingClientRect();
+    const inViewport = rect.top >= 0 &&
       rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    )
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth);
     if (inViewport) {
-      window.removeEventListener('resize', this.handleViewportChange)
-      window.removeEventListener('scroll', this.handleViewportChange)
-      this.element = null
+      window.removeEventListener("resize", this.handleViewportChange);
+      window.removeEventListener("scroll", this.handleViewportChange);
+      this.element = null;
       this.setState({
         visible: true
-      })
+      });
     }
   }
 
-  render () {
-    const {className, style} = this.props
-    const {visible} = this.state
+  render() {
+    const { className, style } = this.props;
+    const { visible } = this.state;
     return visible
       ? <img {...this.props} />
-      : <span
-        ref={this.elementRef}
-        className={className}
-        style={style}
-        />
+      : <span ref={this.elementRef} className={className} style={style} />;
   }
 }

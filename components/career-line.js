@@ -1,30 +1,32 @@
-import React from 'react'
+import React from "react";
 
 export default class CareerLine extends React.Component {
-  render () {
-    const {title, place, details, date, city} = this.props
+  render() {
+    const { title, place, details, date, city } = this.props;
     return (
-      <div className='careerLine'>
-        <div className='description col8'>
-          <h5 className='header'>
+      <div className="careerLine">
+        <div className="description col8">
+          <h5 className="header">
             {title}
           </h5>
-          <p className='place'>
+          <p className="place">
             {place}
           </p>
-          <div className='details'>
+          <div className="details">
             {details}
           </div>
         </div>
-        <div className='info col2'>
-          <p className='date'>
+        <div className="info col2">
+          <p className="date">
             {date}
           </p>
-          <p className='city'>
+          <p className="city">
             {city}
           </p>
         </div>
-        <style jsx>{`
+        <style jsx>
+          {
+            `
                     .careerLine {
                         display: flex;
                         margin-top: 20px;
@@ -49,9 +51,11 @@ export default class CareerLine extends React.Component {
                     .info {
                         padding-left: 40px;
                     }
-                `}</style>
+                `
+          }
+        </style>
 
       </div>
-    )
+    );
   }
 }

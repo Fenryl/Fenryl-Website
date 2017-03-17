@@ -1,38 +1,40 @@
-import React from 'react'
+import React from "react";
 
-import IlluThumbnail from './illu-tn'
+import IlluThumbnail from "./illu-tn";
 
 export default class IlluPreview extends React.Component {
-  render () {
+  render() {
     return (
       <div>
-        <div className='illustrations col12'>
-          <h4 className='title h5-like'>Dernières illustrations</h4>
-          <ul className='illuList'>
-            <li className='illu'>
+        <div className="illustrations col12">
+          <h4 className="title h5-like">Dernières illustrations</h4>
+          <ul className="illuList">
+            <li className="illu">
               <IlluThumbnail
-                image='mao.jpg'
-                description='flat desgin'
-                path='Mao'
-                            />
+                image="mao.jpg"
+                description="flat desgin"
+                path="Mao"
+              />
             </li>
-            <li className='illu'>
+            <li className="illu">
               <IlluThumbnail
-                image='lordedmund.jpg'
-                description='polygon'
-                path='LordEdmund'
-                            />
+                image="lordedmund.jpg"
+                description="polygon"
+                path="LordEdmund"
+              />
             </li>
-            <li className='illu'>
+            <li className="illu">
               <IlluThumbnail
-                image='bobby.jpg'
-                description='digital painting'
-                path='BobbyChiuTribute'
-                            />
+                image="bobby.jpg"
+                description="digital painting"
+                path="BobbyChiuTribute"
+              />
             </li>
           </ul>
         </div>
-        <style jsx>{`
+        <style jsx>
+          {
+            `
                     .illustrations {
                         padding: 40px 0;
                         margin: 0 auto;
@@ -51,8 +53,10 @@ export default class IlluPreview extends React.Component {
                     .illu:last-child {
                         margin-right: 0;
                     }
-                `}</style>
+                `
+          }
+        </style>
       </div>
-    )
+    );
   }
 }

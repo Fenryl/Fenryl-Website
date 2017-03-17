@@ -1,19 +1,21 @@
-import React from 'react'
-import Link from 'next/link'
-import LazyImg from './lazy-img'
+import React from "react";
+import Link from "next/link";
+import LazyImg from "./lazy-img";
 
 export default ({ title, image, description, path }) => (
-  <Link href={`/dev/${path}`} className='link'>
-    <div className='project-tn'>
-      <div className='image'>
+  <Link href={`/dev/${path}`} className="link">
+    <div className="project-tn">
+      <div className="image">
         <LazyImg src={`/static/projects/${image}`} alt={`${title} thumbnail`} />
       </div>
-      <div className='info'>
-        <h4 className='header'>{title}</h4>
-        <p className='description'>{description}</p>
+      <div className="info">
+        <h4 className="header">{title}</h4>
+        <p className="description">{description}</p>
       </div>
 
-      <style jsx>{`
+      <style jsx>
+        {
+          `
             .project-tn {
                 width: 225px;
                 background: #f3f3f3;
@@ -49,7 +51,9 @@ export default ({ title, image, description, path }) => (
                 margin: auto;
                 transition: all .1s ease-out;
             }
-            `}</style>
+            `
+        }
+      </style>
     </div>
   </Link>
-)
+);

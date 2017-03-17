@@ -1,12 +1,14 @@
-import React from 'react'
-import Photo from '../components/frame'
+import React from "react";
+import Photo from "../components/frame";
 
 export default ({ url: { query: { id } } }) => (
-  <div className='permalink'>
-    <div className='wrap'>
+  <div className="permalink">
+    <div className="wrap">
       <Photo id={id} />
     </div>
-    <style jsx>{`
+    <style jsx>
+      {
+        `
       .permalink {
         padding: 100px;
         text-align: center;
@@ -17,6 +19,8 @@ export default ({ url: { query: { id } } }) => (
         border: 1px solid #999;
         margin: auto;
       }
-    `}</style>
+    `
+      }
+    </style>
   </div>
-)
+);

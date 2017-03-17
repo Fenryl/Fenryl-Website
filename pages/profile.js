@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
 
 export default ({ url: { query: { id } } }) => (
-  <div className='main'>
-    <h1 className='heading'>
+  <div className="main">
+    <h1 className="heading">
       User profile:
-      {' '}
-      <b className='username'>{id}</b>
+      {" "}
+      <b className="username">{id}</b>
     </h1>
-    <style jsx>{`
+    <style jsx>
+      {
+        `
       .main {
         padding: 100px;
       }
@@ -19,6 +21,8 @@ export default ({ url: { query: { id } } }) => (
       .username {
         color: blue;
       }
-    `}</style>
+    `
+      }
+    </style>
   </div>
-)
+);

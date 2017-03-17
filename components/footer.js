@@ -1,22 +1,24 @@
-import React from 'react'
+import React from "react";
 
-import Link from 'next/link'
+import Link from "next/link";
 
-import Icon from './icon'
+import Icon from "./icon";
 
 export default () => (
-  <div className='footer'>
+  <div className="footer">
     <p>Copyright © 2012 | Bastien Cailhol</p>
-    <nav className='menu'>
+    <nav className="menu">
       <ul>
-        <li><Link prefetch href='/index'><a>Home</a></Link></li>
-        <li><Link prefetch href='/dev'><a>Dev</a></Link></li>
-        <li><Link prefetch href='/2d'><a>2D</a></Link></li>
-        <li><Link prefetch href='/3d'><a>3D</a></Link></li>
-        <li><a href='/index#contact'>Contact</a></li>
+        <li><Link prefetch href="/index"><a>Home</a></Link></li>
+        <li><Link prefetch href="/dev"><a>Dev</a></Link></li>
+        <li><Link prefetch href="/2d"><a>2D</a></Link></li>
+        <li><Link prefetch href="/3d"><a>3D</a></Link></li>
+        <li><a href="/index#contact">Contact</a></li>
       </ul>
     </nav>
-    <style jsx>{`
+    <style jsx>
+      {
+        `
             .footer {
                 display: flex;
                 padding: 0 10px;
@@ -47,6 +49,8 @@ export default () => (
             .menu li {
                 transition: all .1s ease-out;
             }
-        `}</style>
+        `
+      }
+    </style>
   </div>
-)
+);

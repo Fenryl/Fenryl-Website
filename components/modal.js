@@ -1,23 +1,28 @@
-import React from 'react'
-import Photo from './frame'
+import React from "react";
+import Photo from "./frame";
 
 export default class extends React.Component {
-  dismiss (e) {
-    if (this._shim === e.target ||
-       this._photoWrap === e.target) {
+  dismiss(e) {
+    if (this._shim === e.target || this._photoWrap === e.target) {
       if (this.props.onDismiss) {
-        this.props.onDismiss()
+        this.props.onDismiss();
       }
     }
   }
 
-  render () {
+  render() {
     return (
-      <div ref={el => (this._shim = el)} className='shim' onClick={(e) => this.dismiss(e)}>
-        <div ref={el => (this._photoWrap = el)} className='photo'>
+      <div
+        ref={el => this._shim = el}
+        className="shim"
+        onClick={e => this.dismiss(e)}
+      >
+        <div ref={el => this._photoWrap = el} className="photo">
           <Photo id={this.props.id} />
         </div>
-        <style jsx>{`
+        <style jsx>
+          {
+            `
           .shim {
             position: fixed;
             background: rgba(0,0,0,.65);
@@ -34,8 +39,10 @@ export default class extends React.Component {
             width: 100%;
             margin-top: -250px;
           }
-        `}</style>
+        `
+          }
+        </style>
       </div>
-    )
+    );
   }
 }

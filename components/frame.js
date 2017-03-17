@@ -1,22 +1,24 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 
 export default ({ id }) => (
-  <div className='photo'>
-    <div className='image'>
+  <div className="photo">
+    <div className="image">
       {id}
     </div>
 
-    <div className='sidebar'>
-      <ul className='sidebarList'>
+    <div className="sidebar">
+      <ul className="sidebarList">
         <li>
-          <Link><a href='/profile?id=nkzawa'>@nkzawa</a></Link>
+          <Link><a href="/profile?id=nkzawa">@nkzawa</a></Link>
           - Great photo!
         </li>
       </ul>
     </div>
 
-    <style jsx>{`
+    <style jsx>
+      {
+        `
       .photo {
         width: 800px;
         overflow: hidden;
@@ -53,6 +55,8 @@ export default ({ id }) => (
         margin: 0;
         padding: 0;
       }
-    `}</style>
+    `
+      }
+    </style>
   </div>
-)
+);

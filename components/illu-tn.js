@@ -1,16 +1,18 @@
-import React from 'react'
-import Link from 'next/link'
-import LazyImg from './lazy-img'
+import React from "react";
+import Link from "next/link";
+import LazyImg from "./lazy-img";
 
-export default ({image, description, path}) => (
-  <Link href={`/dev/${path}`} className='link'>
-    <div className='illu-tn'>
+export default ({ image, description, path }) => (
+  <Link href={`/dev/${path}`} className="link">
+    <div className="illu-tn">
       <LazyImg src={`/static/illustrations/LD/${image}`} alt={image} />
-      <div className='info'>
-        <p className='description'>{description}</p>
+      <div className="info">
+        <p className="description">{description}</p>
       </div>
 
-      <style jsx>{`
+      <style jsx>
+        {
+          `
 
                 .illu-tn {
                     position: relative;
@@ -52,7 +54,9 @@ export default ({image, description, path}) => (
                     width: 100%;
                     object-fit: cover;
                 }
-            `}</style>
+            `
+        }
+      </style>
     </div>
   </Link>
-)
+);
