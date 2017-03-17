@@ -1,12 +1,12 @@
 import React from "react";
 import debounce from "lodash/debounce";
 
-const inBrower = typeof window !== "undefined";
+const inBrowser = typeof window !== "undefined";
 
 export default class LazyImg extends React.Component {
-  static prefetch(uri) {
+  static prefetch(url) {
     const image = new window.Image();
-    image.src = uri;
+    image.src = url;
   }
 
   constructor() {
@@ -25,7 +25,7 @@ export default class LazyImg extends React.Component {
   }
 
   componentDidMount() {
-    if (inBrower) {
+    if (inBrowser) {
       window.addEventListener("resize", this.handleViewportChange);
       window.addEventListener("scroll", this.handleViewportChange);
       if (this.element) {
@@ -35,7 +35,7 @@ export default class LazyImg extends React.Component {
   }
 
   componentWillUnmount() {
-    if (inBrower) {
+    if (inBrowser) {
       window.removeEventListener("resize", this.handleViewportChange);
       window.removeEventListener("scroll", this.handleViewportChange);
     }
@@ -43,10 +43,10 @@ export default class LazyImg extends React.Component {
 
   checkVisibility() {
     const rect = this.element.getBoundingClientRect();
-    const inViewport = rect.top >= 0 &&
+    const inViewport = 
+      rect.top >= 0 &&
       rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth);
     if (inViewport) {
       window.removeEventListener("resize", this.handleViewportChange);
