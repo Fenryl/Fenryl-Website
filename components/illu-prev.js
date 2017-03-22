@@ -7,7 +7,7 @@ export default class IlluPreview extends React.Component {
     return (
       <div>
         <div className="illustrations col12">
-          <h4 className="title h5-like">Dernières illustrations</h4>
+          <h4 className="title h5-like">Dernières illustrations<span className="subtitle"> (section en construction)</span></h4>
           <ul className="illuList">
             <li className="illu">
               <IlluThumbnail
@@ -38,6 +38,10 @@ export default class IlluPreview extends React.Component {
                     .illustrations {
                         padding: 40px 0;
                         margin: 0 auto;
+                    }
+
+                    .subtitle {
+                      text-transform: lowercase;
                     }
 
                     .illuList {

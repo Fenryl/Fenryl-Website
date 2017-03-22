@@ -6,7 +6,7 @@ export default class ProjectsPreview extends React.Component {
   render() {
     return (
       <div className="projects col12">
-        <h4 className="title h5-like">Derniers projets Web</h4>
+        <h4 className="title h5-like">Derniers projets Web<span className="subtitle"> (section en construction)</span></h4>
         <div className="projectList">
           <div className="project">
             <ProjectThumbnail
@@ -47,6 +47,10 @@ export default class ProjectsPreview extends React.Component {
                     .projects {
                         padding-top: 40px;
                         margin: 0 auto;
+                    }
+
+                    .subtitle {
+                      text-transform: lowercase;
                     }
 
                     .projectList {

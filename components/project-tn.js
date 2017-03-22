@@ -3,7 +3,7 @@ import Link from "next/link";
 import LazyImg from "./lazy-img";
 
 export default ({ title, image, description, path }) => (
-  <Link href={`/dev/${path}`} className="link">
+//   <Link href={`/dev/${path}`} className="link">
     <div className="project-tn">
       <div className="image">
         <LazyImg src={`/static/projects/${image}`} alt={`${title} thumbnail`} height="230px"  className="img_tn" />
@@ -55,5 +55,5 @@ export default ({ title, image, description, path }) => (
         }
       </style>
     </div>
-  </Link>
+//   </Link>
 );
