@@ -18,11 +18,6 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "babel-eslint": "^7.0.0",
-    "cross-env": "^3.2.4",
-=======
->>>>>>> c148f6e3352fa9efa443b86227ceb4aaaa09eaa5
     "husky": "^0.13.2",
     "lint-staged": "^3.3.1",
     "pre-commit": "^1.2.2",
